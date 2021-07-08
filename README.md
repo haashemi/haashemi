@@ -1,16 +1,33 @@
-### Hi there 👋
+<h1 align="center">👋 Hi, I'm Ali Hashemi.</h1>
 
-<!--
-**MR-AliHaashemi/MR-AliHaashemi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h3> About Me: </h3>
 
-Here are some ideas to get you started:
+- 👤 Ali Hashemi.
+- 🍃 Born on 19 Feb 2004.
+- 🌍 From Iran, Bander Bushehr.
+- 👨🏻‍💻 Newbie Go / Python3 developer.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
+<h1></h1>
+
+- 🌱 I’m currently learning Dart & Flutter
+- 🤖 I’m currently working on LlamaNite Proejcts
+  - It's a professional Telegram-Bot for Fortnite Game.
+  - It uses internal Fortnite API and some 3rdParty APIs like:
+    - Fortnite-API.com
+    - FreeTheVBucks.com
+    - FN-API.com
 - 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  - 🕊 Twitter: [MR_AliHaashemi](https://twitter.com/MR_AliHaashemi)
+  - 🤖 Discord: Ali Hashemi#9999
+  - 🚀 Telegram: [VMProtected](http://t.me/VMProtected)
+  - Instagram: [mr_alihaashemi](https://instagram.com/mr_alihaashemi)
+
+<h1></h1>
+
+<div align="center">
+  
+  ![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=MR-AliHaashemi&count_private=true&show_icons=true&theme=material-palenight)
+
+</div>
+
+<!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LlamaNite&layout=compact)](https://github.com/anuraghazra/github-readme-stats) -->
