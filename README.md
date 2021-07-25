@@ -9,7 +9,7 @@
 
 <h1></h1>
 
-- 🌱 I’m currently learning Dart & Flutter
+- 🌱 I’m currently learning Go.
 - 🤖 I’m currently working on LlamaNite Proejcts
   - It's a professional Telegram-Bot for Fortnite Game.
   - It uses internal Fortnite API and some 3rdParty APIs like:
@@ -20,7 +20,7 @@
   - 🕊 Twitter: [MR_AliHaashemi](https://twitter.com/MR_AliHaashemi)
   - 🤖 Discord: Ali Hashemi#9999
   - 🚀 Telegram: [VMProtected](http://t.me/VMProtected)
-  - Instagram: [mr_alihaashemi](https://instagram.com/mr_alihaashemi)
+  - 📸 Instagram: [mr_alihaashemi](https://instagram.com/mr_alihaashemi)
 
 <!-- <h1></h1> -->
 
