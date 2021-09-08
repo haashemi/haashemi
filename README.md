@@ -1,5 +1,3 @@
-<h1 align="center">👋 Hi, Welcome to my GitHub Page.</h1>
-
 <h3> About Me: </h3>
 
 - 👤 Ali Hashemi.
@@ -10,7 +8,7 @@
 <h1></h1>
 
 - 🌱 I’m currently learning Go.
-- 🤖 I’m currently working on LlamaNite Proejcts
+- 🤖 I’m currently working on [LlamaNite Proejcts](https://github.com/LlamaNite)
   - It's a professional Telegram-Bot for Fortnite Game.
   - It uses internal Fortnite API and some 3rdParty APIs like:
     - Fortnite-API.com
@@ -22,11 +20,6 @@
   - 🚀 Telegram: [VMProtected](http://t.me/VMProtected)
   - 📸 Instagram: [mr_alihaashemi](https://instagram.com/mr_alihaashemi)
 
-<!-- <h1></h1> -->
+<h1></h1>
 
-<!-- <div align="center">
-  
-  ![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=MR-AliHaashemi&count_private=true&show_icons=true&theme=material-palenight)
-  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LlamaNite&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
-</div> -->
+![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=MR-AliHaashemi&count_private=true&show_icons=true&theme=material-palenight)
