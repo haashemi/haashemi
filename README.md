@@ -10,10 +10,10 @@
 - 🌱 I’m currently learning Go and backend stuff.
 - 🤖 I’m currently working on [LlamaNite Proejcts](https://github.com/LlamaNite)
 - 📫 How to reach me: ...
-  - 🕊 Twitter: [MR_AliHaashemi](https://twitter.com/MR_AliHaashemi)
-  - 🤖 Discord: Ali Hashemi#9999
   - 🚀 Telegram: [VMProtected](http://t.me/VMProtected)
+  - 🕊 Twitter: [MR_AliHaashemi](https://twitter.com/MR_AliHaashemi)
   - 📸 Instagram: [mr_alihaashemi](https://instagram.com/mr_alihaashemi)
+  - 🤖 Discord: Ali Hashemi#9999
 
 <h1></h1>
 
