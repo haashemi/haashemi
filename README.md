@@ -13,7 +13,7 @@
   - 🚀 Telegram: [VMProtected](http://t.me/VMProtected)
   - 🕊 Twitter: [MR_AliHaashemi](https://twitter.com/MR_AliHaashemi)
   - 📸 Instagram: [mr_alihaashemi](https://instagram.com/mr_alihaashemi)
-  - 🤖 Discord: Ali Hashemi#9999
+  - 🤖 Discord: Ali Hashemi#5848
 
 <h1></h1>
 
