@@ -8,7 +8,7 @@
 <h1></h1>
 
 - 🌱 I’m currently learning Go and backend stuff.
-- 🤖 I’m currently working on [LlamaNite Proejcts](https://github.com/LlamaNite)
+- 🤖 I’m currently working on [LlamaNite Projects](https://github.com/LlamaNite)
 - 📫 How to reach me: ...
   - 🚀 Telegram: [VMProtected](http://t.me/VMProtected)
   - 🕊 Twitter: [MR_AliHaashemi](https://twitter.com/MR_AliHaashemi)
