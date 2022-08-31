@@ -12,6 +12,6 @@
   - 🤖 Discord: `Ali Hashemi#5848`
   - 🚀 Telegram: [VMProtected](http://t.me/VMProtected)
 
-<h1></h1>
+<!--<h1></h1>
 
-![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=MR-AliHaashemi&count_private=true&show_icons=true&theme=material-palenight)
+![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=MR-AliHaashemi&count_private=true&show_icons=true&theme=material-palenight) -->
