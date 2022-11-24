@@ -9,8 +9,8 @@
 <h1></h1>
 
 - 📫 How to reach me:
-  - 🤖 Discord: `Ali Hashemi#5848`
-  - 🚀 Telegram: [VMProtected](http://t.me/VMProtected)
+  - 🤖 Discord: `Ali Hashemi#6969`
+  - 🚀 Telegram: @[Byfron](http://t.me/Byfron)
 
 <!--<h1></h1>
 
