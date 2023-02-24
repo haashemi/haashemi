@@ -1,5 +1,3 @@
 - 🍃 Born on 19 Feb 2004.
 - 🌍 From Iran, Bander Bushehr.
 - 👨🏻‍💻 Newbie Golang developer.
-- 💖 Interested in front-end development with React.
-- ⚡️ First priority is performance, then user/developer experience.
