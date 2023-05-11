@@ -13,8 +13,8 @@
 
 ![Windows 11](https://img.shields.io/badge/Windows%2011-%23374161.svg?style=flat-square&logo=windows11&logoColor=white) ![Manjaro](https://img.shields.io/badge/Manjaro-%23374161.svg?style=flat-square&logo=manjaro&logoColor=white) ![Ubuntu Server](https://img.shields.io/badge/Ubuntu%20Server-%23374161.svg?style=flat-square&logo=ubuntu&logoColor=white)
 
-## 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=haashemi&theme=dark&hide_border=true&include_all_commits=true&count_private=true)<br/>
+<!-- ## 📊 GitHub Stats: -->
+<!-- ![](https://github-readme-stats.vercel.app/api?username=haashemi&theme=dark&hide_border=true&include_all_commits=true&count_private=true)<br/> -->
 <!-- ![](https://github-readme-streak-stats.herokuapp.com/?user=haashemi&theme=dark&hide_border=true)<br/> -->
 <!-- ![](https://github-readme-stats.vercel.app/api/top-langs/?username=haashemi&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact) -->
 
