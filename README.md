@@ -1,7 +1,7 @@
 ## 💫 About Me:
 - 🍃 Born on 19 Feb 2004.
 - 🌍 From Iran, Bander Bushehr.
-- 👨🏻‍💻 Junior Golang & React developer.
+- 👨🏻‍💻 Junior FullStack developer.
 
 
 ## 💻 Tech Stack:
@@ -9,7 +9,6 @@
 
 ![Go](https://img.shields.io/badge/Golang-%2300ADD8.svg?style=flat-square&logo=go&logoColor=white) 
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white) 
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
 
 ![Next JS](https://img.shields.io/badge/Next.JS-black?style=flat-square&logo=next.js&logoColor=white) 
 ![React](https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB) 
