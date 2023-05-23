@@ -27,6 +27,5 @@
 <!-- ![](https://github-readme-stats.vercel.app/api/top-langs/?username=haashemi&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact) -->
 
 ---
+[![wakatime](https://wakatime.com/badge/user/9dd126df-31f2-400a-835d-69b77131b331.svg)](https://wakatime.com/@9dd126df-31f2-400a-835d-69b77131b331)
 [![](https://visitcount.itsvg.in/api?id=haashemi&icon=5&color=12)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
