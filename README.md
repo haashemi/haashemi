@@ -1,11 +1,10 @@
 ## 💫 About Me:
 - 🍃 Born on 19 Feb 2004.
 - 🌍 From Iran, Bander Bushehr.
-- 👨🏻‍💻 Junior FullStack developer.
+- 👨🏻‍💻 Junior Golang developer.
 
 
 ## 💻 Tech Stack:
-![VPN](https://img.shields.io/badge/Any%20VPN%20just%20to%20be%20Alive-%238c1d32.svg?style=flat-square&logo=openvpn&logoColor=white) 
 
 ![Go](https://img.shields.io/badge/Golang-%2300ADD8.svg?style=flat-square&logo=go&logoColor=white) 
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white) 
@@ -28,4 +27,4 @@
 
 ---
 [![wakatime](https://wakatime.com/badge/user/9dd126df-31f2-400a-835d-69b77131b331.svg)](https://wakatime.com/@9dd126df-31f2-400a-835d-69b77131b331)
-[![](https://visitcount.itsvg.in/api?id=haashemi&icon=5&color=12)](https://visitcount.itsvg.in)
+<!-- [![](https://visitcount.itsvg.in/api?id=haashemi&icon=5&color=12)](https://visitcount.itsvg.in) -->
