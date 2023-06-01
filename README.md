@@ -1,5 +1,5 @@
 ## 💫 About Me:
-Junior back-end developer with 1+ years of professional experience using Golang. Proficient in developing and maintaining high-performance, stable, and reliable web applications. Also interested in front-end development using modern web frameworks like React.
+Junior back-end developer with 3+ years of experience, including 1+ years of professional experience using Golang. Proficient in developing and maintaining high-performance, stable, and reliable web applications. Also interested in front-end development using modern web frameworks like React.
 
 ## 💻 Tech Stack:
 
