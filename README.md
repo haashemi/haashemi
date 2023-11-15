@@ -12,8 +12,8 @@ A junior back-end developer with 3+ years of experience, including 1+ years of p
 | [go-idpay](https://github.com/haashemi/go-idpay)      | 🔵 Stable enough | A Go wrapper for IDPay's API                             |
 | [go-nextpay](https://github.com/haashemi/go-nextpay)  | 🔵 Stable enough | A Go wrapper for NextPay's API                           |
 | [llamaimage](https://github.com/LlamaNite/llamaimage) | 🔵 Low Priority  | A simple image library written in Golang based on stdlib |
-| [gouereader](https://github.com/haashemi/tgo)         | 🟡 Archived      | An Unreal Engine binary reader                           |
-| [uemanifest](https://github.com/haashemi/tgo)         | 🟡 Archived      | An Unreal Engine manifest parser                         |
+| [uereader](https://github.com/haashemi/uereader)      | 🟡 Archived      | An Unreal Engine binary reader                           |
+| [uemanifest](https://github.com/haashemi/uemanifest)  | 🟡 Archived      | An Unreal Engine manifest parser                         |
 
 ### Projects
 
