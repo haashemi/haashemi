@@ -9,7 +9,7 @@ A Golang developer with 3+ years of experience. Proficient in developing and mai
 | Name                                                  | Status          | Description                                              |
 | ----------------------------------------------------- | --------------- | -------------------------------------------------------- |
 | [tgo](https://github.com/haashemi/tgo)                | 🟢 Active       | A Powerful Telegram bot api framework in Go!             |
-| [go-fnapiio](https://github.com/haashemi/go-fnapiio)  | 🟢 Active       | A Simple Golang API wrapper for FortniteAPI.io           |
+| [go-fnapiio](https://github.com/haashemi/go-fnapiio)  | 🟢 WIP          | A Simple Golang API wrapper for FortniteAPI.io           |
 | [go-idpay](https://github.com/haashemi/go-idpay)      | 🔵 Stable       | A Go wrapper for IDPay's API                             |
 | [go-nextpay](https://github.com/haashemi/go-nextpay)  | 🔵 Stable       | A Go wrapper for NextPay's API                           |
 | [llamaimage](https://github.com/LlamaNite/llamaimage) | 🔵 Low Priority | A simple image library written in Golang based on stdlib |
@@ -20,7 +20,6 @@ A Golang developer with 3+ years of experience. Proficient in developing and mai
 
 | Name                                                       | Status          | Description                                                               |
 | ---------------------------------------------------------- | --------------- | ------------------------------------------------------------------------- |
-| [SticktedBot](https://github.com/haashemi/SticktedBot)     | 🟢 WIP          | A Sticker pack management telegram bot                                    |
 | [AcountLandBot](https://github.com/haashemi/AcountLandBot) | 🔵 Stable       | A Telegram bot to generate and post Fortnite's itemshop                   |
 | [ByfronBot](https://github.com/haashemi/ByfronBot)         | 🔵 Stable       | Simple personal telegram bot                                              |
 | [BotManager](https://github.com/haashemi/BotManager)       | 🔵 Low Priority | A Simple bot manager API & Bot for securing local hosted telegram-bot-api |
