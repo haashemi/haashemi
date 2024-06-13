@@ -1,6 +1,8 @@
-"use client";
-import { cn } from "@/lib/utils";
-import React, { ReactNode } from "react";
+'use client';
+import type { ReactNode } from 'react';
+import React from 'react';
+
+import { cn } from '@/lib/utils';
 
 interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
   children?: ReactNode;
@@ -16,7 +18,7 @@ export const AuroraBackground = ({
   return (
     <div
       className={cn(
-        "transition-bg fixed h-screen w-screen items-center justify-center overflow-hidden bg-zinc-50 dark:bg-slate-950",
+        'transition-bg fixed h-screen w-screen items-center justify-center overflow-hidden bg-zinc-50 dark:bg-slate-950',
         className,
       )}
       {...props}
@@ -40,9 +42,10 @@ export const AuroraBackground = ({
             dark:invert-0 dark:[background-image:var(--dark-gradient),var(--aurora)] after:dark:[background-image:var(--dark-gradient),var(--aurora)]
           `,
 
-          showRadialGradient && `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`,
+          showRadialGradient &&
+            `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`,
         )}
-      ></div>
+      />
     </div>
   );
 };
