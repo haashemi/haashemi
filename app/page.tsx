@@ -124,7 +124,7 @@ export default function Home() {
 
           {/* <Section>Last Works</Section> */}
 
-          <Section className="flex flex-col gap-5 ">
+          <Section className="flex flex-col gap-5">
             <div className="flex items-center justify-between">
               <h3 className="text-lg font-semibold italic">Get in touch!</h3>
             </div>
