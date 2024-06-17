@@ -1,5 +1,19 @@
-A Golang developer with 3+ years of experience. Proficient in developing and
-maintaining high-performance, stable, and reliable web applications. Who's also
-interested in front-end development using frameworks like Svelte and React.
+# 👋 Hi there!
 
-My CV: [here](https://github.com/haashemi/cv)
+I'm Ali Hashemi, a Golang developer who also does front-end as hobby and also
+focuses on writing simple and performant codes. Passionate about creating and
+maintaining open-source libraries and frameworks.
+
+CV: [github.com/haashemi/cv](https://github.com/haashemi/cv)
+
+## 🔧 Current Tech Stack:
+
+![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+## 📈 GitHub Stats
+
+[![My GitHub stats](https://github-readme-stats.vercel.app/api?username=haashemi&hide=contribs&show_icons=true&theme=tokyonight)](https://github.com/haashemi)
