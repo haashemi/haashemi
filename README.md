@@ -16,4 +16,5 @@ CV: [github.com/haashemi/cv](https://github.com/haashemi/cv)
 
 ## 📈 GitHub Stats
 
-[![My GitHub stats](https://github-readme-stats.vercel.app/api?username=haashemi&hide=contribs&show_icons=true&theme=tokyonight)](https://github.com/haashemi)
+[![My GitHub stats](https://github-readme-stats.haashemi.dev/api?username=haashemi&hide=contribs&show_icons=true&theme=tokyonight)](https://github.com/haashemi)
+[![My top languages](https://github-readme-stats.haashemi.dev/api/top-langs/?username=haashemi&layout=compact&theme=tokyonight)](https://github.com/haashemi)
