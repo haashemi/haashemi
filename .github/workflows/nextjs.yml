@@ -37,6 +37,10 @@ jobs:
           echo "manager=pnpm" >> $GITHUB_OUTPUT
           echo "command=install" >> $GITHUB_OUTPUT
           echo "runner=pnpm" >> $GITHUB_OUTPUT
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
