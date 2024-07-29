@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@fullstacksjs/eslint-config':
         specifier: ^10.11.1
-        version: 10.11.1(@babel/core@7.24.7)(@types/node@20.14.2)(eslint@8.57.0)(graphql@16.8.2)(prettier@3.3.2)(react@18.3.1)(tailwindcss@3.4.6)(typescript@5.4.5)
+        version: 10.11.1(@babel/core@7.24.7)(@types/node@20.14.2)(eslint@8.57.0)(graphql@16.8.2)(prettier@3.3.2)(react@18.3.1)(tailwindcss@3.4.7)(typescript@5.4.5)
       '@fullstacksjs/tsconfig':
         specifier: ^1.1.0
         version: 1.1.0(typescript@5.4.5)
@@ -58,8 +58,8 @@ importers:
         specifier: 0.6.5
         version: 0.6.5(prettier@3.3.2)
       tailwindcss:
-        specifier: 3.4.6
-        version: 3.4.6
+        specifier: 3.4.7
+        version: 3.4.7
       typescript:
         specifier: 5.4.5
         version: 5.4.5
@@ -2227,8 +2227,8 @@ packages:
   tailwind-merge@2.4.0:
     resolution: {integrity: sha512-49AwoOQNKdqKPd9CViyH5wJoSKsCDjUlzL8DxuGp3P1FsGY36NJDAa18jLZcaHAUUuTj+JB8IAo8zWgBNvBF7A==}
 
-  tailwindcss@3.4.6:
-    resolution: {integrity: sha512-1uRHzPB+Vzu57ocybfZ4jh5Q3SdlH7XW23J5sQoM9LhE9eIOlzxer/3XPSsycvih3rboRsvt0QCmzSrqyOYUIA==}
+  tailwindcss@3.4.7:
+    resolution: {integrity: sha512-rxWZbe87YJb4OcSopb7up2Ba4U82BoiSGUdoDr3Ydrg9ckxFS/YWsvhN323GMcddgU65QRy7JndC7ahhInhvlQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -2620,7 +2620,7 @@ snapshots:
 
   '@eslint/js@8.57.0': {}
 
-  '@fullstacksjs/eslint-config@10.11.1(@babel/core@7.24.7)(@types/node@20.14.2)(eslint@8.57.0)(graphql@16.8.2)(prettier@3.3.2)(react@18.3.1)(tailwindcss@3.4.6)(typescript@5.4.5)':
+  '@fullstacksjs/eslint-config@10.11.1(@babel/core@7.24.7)(@types/node@20.14.2)(eslint@8.57.0)(graphql@16.8.2)(prettier@3.3.2)(react@18.3.1)(tailwindcss@3.4.7)(typescript@5.4.5)':
     dependencies:
       '@graphql-eslint/eslint-plugin': 3.20.1(@babel/core@7.24.7)(@types/node@20.14.2)(graphql@16.8.2)
       '@typescript-eslint/eslint-plugin': 7.1.0(@typescript-eslint/parser@7.1.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -2643,7 +2643,7 @@ snapshots:
       eslint-plugin-react-hooks: 4.6.0(eslint@8.57.0)
       eslint-plugin-simple-import-sort: 12.0.0(eslint@8.57.0)
       eslint-plugin-storybook: 0.8.0(eslint@8.57.0)(typescript@5.4.5)
-      eslint-plugin-tailwindcss: 3.14.3(tailwindcss@3.4.6)
+      eslint-plugin-tailwindcss: 3.14.3(tailwindcss@3.4.7)
       prettier: 3.3.2
       read-pkg-up: 7.0.1
     optionalDependencies:
@@ -3896,11 +3896,11 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-tailwindcss@3.14.3(tailwindcss@3.4.6):
+  eslint-plugin-tailwindcss@3.14.3(tailwindcss@3.4.7):
     dependencies:
       fast-glob: 3.3.2
       postcss: 8.4.40
-      tailwindcss: 3.4.6
+      tailwindcss: 3.4.7
 
   eslint-scope@5.1.1:
     dependencies:
@@ -4977,7 +4977,7 @@ snapshots:
 
   tailwind-merge@2.4.0: {}
 
-  tailwindcss@3.4.6:
+  tailwindcss@3.4.7:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
