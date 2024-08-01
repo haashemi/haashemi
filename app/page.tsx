@@ -56,13 +56,13 @@ const ProfilePage = () => {
       </Section>
 
       <Section isGrid title={t("blogPostsTitle")} desc={t("blogPostsDesc")}>
-        <BlogPostCard id={1} title="The bug I found in Golang's stdlib for the first-time!" publishedAt="18/05/2024" />
+        <BlogPostCard id={3} title="The bug I found in Golang's stdlib for the first-time!" publishedAt="18/05/2024" />
         <BlogPostCard
           id={2}
           title="Introducing Writer. Easiest way to write text on images in Go!"
           publishedAt="23/03/2024"
         />
-        <BlogPostCard id={3} title="Painter now supports all type of gradients!" publishedAt="01/11/2023" />
+        <BlogPostCard id={1} title="Painter now supports all type of gradients!" publishedAt="01/11/2023" />
       </Section>
 
       <Section title={t("experiencesTitle")} desc={t("experiencesDesc")}>
