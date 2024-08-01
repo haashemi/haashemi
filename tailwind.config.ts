@@ -17,6 +17,9 @@ const config: Config = {
     },
   },
   plugins: [typography],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 };
 
 export default config;
