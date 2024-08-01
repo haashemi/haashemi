@@ -1,21 +1,19 @@
-const { init } = require('@fullstacksjs/eslint-config/init');
+const { init } = require("@fullstacksjs/eslint-config/init");
 
 module.exports = init({
-  root: true,
   modules: {
-    auto: true,
     react: true,
+    typescript: { parserProject: "./tsconfig.json", resolverProject: "./tsconfig.json" },
+    strict: true,
+    import: true,
+    tailwind: true,
     next: true,
-    cspell: true,
-    typescript: {
-      parserProject: './tsconfig.json',
-      resolverProject: './tsconfig.json',
-    },
+    prettier: true,
   },
   rules: {
-    'tailwindcss/no-custom-classname': ['warn', { whitelist: ['size\\-.*'] }],
-    'default-case': 'off',
-    '@typescript-eslint/naming-convention': 'off',
-    '@typescript-eslint/no-throw-literal': 'off',
+    "tailwindcss/no-custom-classname": ["warn", { whitelist: ["size\\-.*"] }],
+    "default-case": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-throw-literal": "off",
   },
 });
