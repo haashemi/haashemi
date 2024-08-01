@@ -1,30 +1,28 @@
-import './globals.css';
+import "./globals.css";
 
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 
-import { cn } from '@/lib/utils';
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+import Header from "@/app/_components/Header";
+import { poppins } from "@/app/fonts";
 
 export const metadata: Metadata = {
-  title: 'Ali Hashemi',
-  description:
-    "Ali Hashemi's personal website. There's nothing special about it.",
+  title: "Ali Hashemi",
+  description: "Ali Hashemi's personal website. There's nothing special about it.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="en" className="dark">
-      <body
-        className={cn(
-          'min-h-screen bg-slate-950 font-sans antialiased',
-          inter.variable,
-        )}
-      >
-        {children}
+    <html lang={locale} className="dark">
+      <body className={`min-h-screen bg-black font-sans ${poppins.variable}`}>
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          <main className="container mx-auto flex flex-col">{children}</main>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
