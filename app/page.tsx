@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import { FaGithub, FaTelegram } from "react-icons/fa";
 
 import Section from "@/app/_components/Section";
 
@@ -23,35 +22,26 @@ const ProfilePage = () => {
         <ProjectCard
           title="TGO"
           desc="A powerful Telegram Bot framework with all features you need!"
+          url="/projects/tgo"
+          repoUrl="https://github.com/haashemi/tgo"
           bgClass="bg-blue-600"
           textClass="group-hover:text-blue-400"
-          url="/projects/tgo"
-          urls={[
-            { icon: <FaGithub size={24} />, url: "https://github.com/haashemi/tgo" },
-            { icon: <FaTelegram size={24} />, url: "https://t.me/HaashemiDev" },
-          ]}
         />
         <ProjectCard
           title="Writer"
-          desc="A simple and easy to use Go library to write texts on images with the help of harfbuzz."
           bgClass="bg-purple-600"
+          desc="A simple and easy to use Go library to write texts on images with the help of harfbuzz."
+          repoUrl="https://github.com/haashemi/writer"
           textClass="group-hover:text-purple-400"
           url="/projects/writer"
-          urls={[
-            { icon: <FaGithub size={24} />, url: "https://github.com/haashemi/writer" },
-            { icon: <FaTelegram size={24} />, url: "https://t.me/HaashemiDev" },
-          ]}
         />
         <ProjectCard
           title="Painter"
-          desc="A simple library to help you to draw on RGBA images more easily."
           bgClass="bg-teal-600"
+          desc="A simple library to help you to draw on RGBA images more easily."
+          repoUrl="https://github.com/haashemi/painter"
           textClass="group-hover:text-teal-400"
           url="/projects/painter"
-          urls={[
-            { icon: <FaGithub size={24} />, url: "https://github.com/haashemi/painter" },
-            { icon: <FaTelegram size={24} />, url: "https://t.me/HaashemiDev" },
-          ]}
         />
       </Section>
 
