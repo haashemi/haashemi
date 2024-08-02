@@ -1,55 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 import { cn } from "@/app/_lib";
 
 interface ProjectCardProps {
   title: string;
   desc: string;
+  url: string;
+  repoUrl: string;
   bgClass: string;
   textClass: string;
-  url: string;
-  urls: {
-    icon: React.ReactNode;
-    url: string;
-  }[];
 }
 
 const ProjectCard = (props: ProjectCardProps) => (
-  <div className="group flex aspect-[5/4] size-full flex-col overflow-hidden rounded-lg bg-zinc-900">
-    <div className="flex-[2] p-3 transition-all group-hover:p-0">
-      <div className="relative flex h-full items-center justify-center overflow-hidden rounded-lg bg-zinc-950 group-hover:rounded-none">
-        <div
-          className={cn(
-            `absolute size-full -translate-y-1/2 rounded-full opacity-20 blur-3xl transition-all group-hover:translate-y-0`,
-            props.bgClass,
-          )}
-        />
+  <div className="group flex aspect-[5/4] size-full flex-col overflow-hidden rounded-xl bg-zinc-900">
+    {/* Project name section */}
+    <div className="relative flex aspect-[19/9] w-full items-center justify-center overflow-hidden bg-zinc-950">
+      <div
+        className={cn(
+          `absolute size-full -translate-y-1/2 rounded-full opacity-20 blur-3xl transition-all group-hover:translate-y-0`,
+          props.bgClass,
+        )}
+      />
 
-        <h2
-          className={cn(
-            `z-10 select-none text-6xl font-black text-zinc-200 transition-all group-hover:text-7xl`,
-            props.textClass,
-          )}
-        >
-          {props.title}
-        </h2>
-      </div>
+      <h2 className={cn(`select-none text-6xl font-black text-zinc-100 transition-colors`, props.textClass)}>
+        {props.title}
+      </h2>
     </div>
-    <div className="flex flex-1 flex-col justify-between px-5 pb-3 pt-2">
-      <p className="text-zinc-300">{props.desc}</p>
+    {/* About project section */}
+    <div className="flex flex-1 flex-col justify-between px-5 pb-3">
+      <p className="text-sm text-zinc-300 sm:text-base">{props.desc}</p>
 
       <div className="flex items-center justify-between">
         <div className="flex gap-2">
-          {props.urls.map((v) => (
-            <a
-              key={v.url}
-              href={v.url}
-              className="rounded-xl border border-zinc-700 p-2 transition-colors hover:bg-zinc-700"
-            >
-              {v.icon}
-            </a>
-          ))}
+          <a href={props.repoUrl} className="rounded-xl border border-zinc-700 p-2 transition-colors hover:bg-zinc-700">
+            <FaGithub className="size-6" />
+          </a>
         </div>
 
         <Link
@@ -70,9 +57,9 @@ interface BlogPostCardProps {
 }
 
 const BlogPostCard = (props: BlogPostCardProps) => (
-  <div className="flex aspect-[5/4] size-full flex-col gap-2 rounded-lg bg-zinc-900 p-2">
+  <div className="flex aspect-[5/4] size-full flex-col gap-2 rounded-xl bg-zinc-900 p-2">
     <Image
-      className="aspect-video w-full rounded-lg bg-zinc-800"
+      className="aspect-video w-full rounded-xl bg-zinc-800"
       alt={`Cover of post ${props.title}`}
       src={`/blog/${props.id}/cover.png`}
       width={0}
