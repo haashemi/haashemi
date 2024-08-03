@@ -6,7 +6,7 @@ interface SectionProps {
 }
 
 const Section = ({ title, desc, isGrid, children }: SectionProps) => (
-  <div className="flex flex-col gap-5">
+  <div id={title} className="flex flex-col gap-5">
     <div className="flex flex-col gap-3">
       <h2 className="text-4xl font-semibold">{title}</h2>
       <p className="text-zinc-400">{desc}</p>
