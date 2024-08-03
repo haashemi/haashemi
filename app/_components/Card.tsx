@@ -15,9 +15,12 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = (props: ProjectCardProps) => (
-  <div className="group flex aspect-[5/4] size-full flex-col overflow-hidden rounded-xl bg-zinc-900">
+  <div className="group flex aspect-[5/4] size-full flex-col gap-3 overflow-hidden rounded-xl bg-zinc-900">
     {/* Project name section */}
-    <div className="relative flex aspect-[19/9] w-full items-center justify-center overflow-hidden bg-zinc-950">
+    <Link
+      href={props.url}
+      className="relative flex aspect-[19/9] w-full items-center justify-center overflow-hidden bg-zinc-950"
+    >
       <div
         className={cn(
           `absolute size-full -translate-y-1/2 rounded-full opacity-20 blur-3xl transition-all group-hover:translate-y-0`,
@@ -28,7 +31,7 @@ const ProjectCard = (props: ProjectCardProps) => (
       <h2 className={cn(`select-none text-6xl font-black text-zinc-100 transition-colors`, props.textClass)}>
         {props.title}
       </h2>
-    </div>
+    </Link>
     {/* About project section */}
     <div className="flex flex-1 flex-col justify-between px-5 pb-3">
       <p className="text-sm text-zinc-300 sm:text-base">{props.desc}</p>
