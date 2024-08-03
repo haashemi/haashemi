@@ -66,12 +66,12 @@ const ProfilePage = () => {
 
       <Section title={t("contactTitle")} desc={t("contactDesc")}>
         <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
-          <ContactCard Icon={MdOutlineEmail} user="contact@haashemi.dev" url="mailto:contact@haashemi.dev" />
-          <ContactCard Icon={FaLinkedin} user="haashemi" url="https://www.linkedin.com/in/haashemi" />
-          <ContactCard Icon={FaTelegram} user="Byfron" url="https://t.me/Byfron" />
-          <ContactCard Icon={FaGithub} user="haashemi" url="https://github.com/haashemi" />
-          <ContactCard Icon={FaXTwitter} user="haashemi_dev" url="https://x.com/haashemi_dev" />
-          <ContactCard Icon={FaInstagram} user="haashemi_dev" url="https://instagram.com/haashemi_dev" />
+          <ContactCard Icon={MdOutlineEmail} ariaLabel="Send an email" user="contact@haashemi.dev" url="mailto:contact@haashemi.dev" />
+          <ContactCard Icon={FaLinkedin} ariaLabel="Open LinkedIn profile" user="haashemi" url="https://www.linkedin.com/in/haashemi" />
+          <ContactCard Icon={FaTelegram} ariaLabel="Open Telegram chat" user="Byfron" url="https://t.me/Byfron" />
+          <ContactCard Icon={FaGithub} ariaLabel="Open GitHub profile" user="haashemi" url="https://github.com/haashemi" />
+          <ContactCard Icon={FaXTwitter} ariaLabel="Open X (formerly Twitter) profile" user="haashemi_dev" url="https://x.com/haashemi_dev" />
+          <ContactCard Icon={FaInstagram} ariaLabel="Open Instagram profile" user="haashemi_dev" url="https://instagram.com/haashemi_dev" />
         </div>
       </Section>
     </main>
