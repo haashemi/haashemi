@@ -1,0 +1,15 @@
+{
+  "Home": {
+    "jobTitle": "Backend Developer",
+    "about": "I'm Ali Hashemi. A Junior back-end developer with 3+ years of experience, including 1+ years of professional experience using Golang. Proficient in developing and maintaining high-performance, stable, and reliable web applications. Also interested in front-end development using modern web frameworks like Svelte and React.",
+
+    "projectsTitle": "Projects",
+    "projectsDesc": "Top 3 projects I'm maintaining",
+
+    "blogPostsTitle": "Blog Posts",
+    "blogPostsDesc": "Some of the posts I wrote recently",
+
+    "experiencesTitle": "Experiences",
+    "experiencesDesc": "My recent work experiences"
+  }
+}
