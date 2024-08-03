@@ -28,24 +28,24 @@ const ProjectCard = (props: ProjectCardProps) => (
         )}
       />
 
-      <h2 className={cn(`select-none text-6xl font-black text-zinc-100 transition-colors`, props.textClass)}>
+      <h2 className={cn(`select-none text-5xl xl:text-6xl font-black text-zinc-100 transition-colors`, props.textClass)}>
         {props.title}
       </h2>
     </Link>
     {/* About project section */}
-    <div className="flex flex-1 flex-col justify-between px-5 pb-3">
-      <p className="text-sm text-zinc-300 sm:text-base">{props.desc}</p>
+    <div className="flex flex-1 flex-col justify-between gap-3 px-5 pb-3">
+      <p className="text-sm text-zinc-300 line-clamp-2 xl:text-base">{props.desc}</p>
 
       <div className="flex items-center justify-between">
         <div className="flex gap-2">
           <a href={props.repoUrl} className="rounded-xl border border-zinc-700 p-2 transition-colors hover:bg-zinc-700">
-            <FaGithub className="size-6" />
+            <FaGithub className="size-5 xl:size-6" />
           </a>
         </div>
 
         <Link
           href={props.url}
-          className="flex h-full items-center justify-center rounded-xl border border-zinc-700 px-5 text-lg transition-colors hover:bg-zinc-700"
+          className="flex h-full items-center justify-center rounded-xl border border-zinc-700 px-3 xl:px-5 text-base xl:text-lg transition-colors hover:bg-zinc-700"
         >
           Read More
         </Link>
