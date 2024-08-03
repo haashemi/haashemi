@@ -6,10 +6,7 @@ const Header = () => (
       </a>
       <ul className="flex flex-1 justify-end gap-3">
         <li>
-          <a href="/blog">Blog</a>
-        </li>
-        <li>
-          <a href="#Projects">Projects</a>
+          <a href="#Contact">Contact</a>
         </li>
       </ul>
     </nav>
