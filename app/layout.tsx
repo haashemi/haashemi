@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
-import Header from "@/app/_components/Header";
-import { poppins } from "@/app/fonts";
+import Header from "./_components/Header";
+import { poppins } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Ali Hashemi",
@@ -21,7 +21,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
       <body className={`min-h-screen bg-black font-sans ${poppins.variable}`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main className="container mx-auto flex flex-col">{children}</main>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
