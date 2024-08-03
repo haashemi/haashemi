@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import { FaGithub, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { GoMail } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
 
 import Section from "@/app/_components/Section";
