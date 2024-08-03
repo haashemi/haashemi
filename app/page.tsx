@@ -64,7 +64,7 @@ const ProfilePage = () => {
         <div>TODO:</div>
       </Section> */}
 
-      <Section title="Contact" desc="Let's keep in touch!">
+      <Section title={t("contactTitle")} desc={t("contactDesc")}>
         <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
           <ContactCard Icon={MdOutlineEmail} user="contact@haashemi.dev" url="mailto:contact@haashemi.dev" />
           <ContactCard Icon={FaLinkedin} user="haashemi" url="https://www.linkedin.com/in/haashemi" />
