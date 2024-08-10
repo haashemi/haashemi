@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/seo", "@nuxt/eslint", "@nuxt/fonts"],
+  modules: ["@nuxt/content", "@nuxt/eslint", "@nuxt/fonts", "@nuxtjs/seo", "@nuxtjs/tailwindcss", "@nuxt/image"],
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   typescript: {
