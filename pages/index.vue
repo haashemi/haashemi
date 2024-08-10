@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaTwitter, MdEmailOutlined } from "oh-vue-icons/icons";
+import {
+  FaBandsGithub,
+  FaBandsInstagram,
+  FaBandsLinkedin,
+  FaBandsTelegram,
+  FaBandsTwitter,
+  MdOutlinedEmail,
+} from "@kalimahapps/vue-icons";
 </script>
 
 <template>
@@ -48,36 +55,43 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaTwitter, MdEmailOutlin
         class="grid w-full grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
       >
         <ContactCard
-          :icon="MdEmailOutlined"
+          v-slot="props"
           aria-label="Send an email"
           user="contact@haashemi.dev"
           url="mailto:contact@haashemi.dev"
-        />
+        >
+          <MdOutlinedEmail :class="props.class" />
+        </ContactCard>
         <ContactCard
-          :icon="FaLinkedin"
+          v-slot="props"
           aria-label="Open LinkedIn profile"
           user="haashemi"
           url="https://www.linkedin.com/in/haashemi"
-        />
-        <ContactCard :icon="FaTelegram" aria-label="Open Telegram chat" user="Byfron" url="https://t.me/Byfron" />
+        >
+          <FaBandsLinkedin :class="props.class" />
+        </ContactCard>
+        <ContactCard v-slot="props" aria-label="Open Telegram chat" user="Byfron" url="https://t.me/Byfron">
+          <FaBandsTelegram :class="props.class" />
+        </ContactCard>
+        <ContactCard v-slot="props" aria-label="Open GitHub profile" user="haashemi" url="https://github.com/haashemi">
+          <FaBandsGithub :class="props.class" />
+        </ContactCard>
         <ContactCard
-          :icon="FaGithub"
-          aria-label="Open GitHub profile"
-          user="haashemi"
-          url="https://github.com/haashemi"
-        />
-        <ContactCard
-          :icon="FaTwitter"
+          v-slot="props"
           aria-label="Open X (formerly Twitter) profile"
           user="haashemi_dev"
           url="https://x.com/haashemi_dev"
-        />
+        >
+          <FaBandsTwitter :class="props.class" />
+        </ContactCard>
         <ContactCard
-          :icon="FaInstagram"
+          v-slot="props"
           aria-label="Open Instagram profile"
           user="haashemi_dev"
           url="https://instagram.com/haashemi_dev"
-        />
+        >
+          <FaBandsInstagram :class="props.class" />
+        </ContactCard>
       </div>
     </HomeSection>
   </main>
