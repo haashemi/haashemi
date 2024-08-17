@@ -1,25 +1,28 @@
-import typography from "@tailwindcss/typography";
-import type { Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
-const config: Config = {
-  darkMode: "class",
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+export default {
+  plugins: [],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-poppins)", ...fontFamily.sans],
+        sans: ["Poppins", ...fontFamily.sans],
       },
     },
   },
-  plugins: [typography],
+  content: [
+    `./components/**/*.{vue,js,ts}`,
+    `./layouts/**/*.vue`,
+    `./pages/**/*.vue`,
+    `./composables/**/*.{js,ts}`,
+    `./plugins/**/*.{js,ts}`,
+    `./utils/**/*.{js,ts}`,
+    `./App.{js,ts,vue}`,
+    `./app.{js,ts,vue}`,
+    `./Error.{js,ts,vue}`,
+    `./error.{js,ts,vue}`,
+    `./app.config.{js,ts}`,
+  ],
   future: {
     hoverOnlyWhenSupported: true,
   },
 };
-
-export default config;
