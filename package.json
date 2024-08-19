@@ -17,7 +17,7 @@
     "clsx": "2.1.1",
     "nuxt": "3.12.4",
     "tailwind-merge": "2.5.2",
-    "vue": "3.4.37"
+    "vue": "3.4.38"
   },
   "devDependencies": {
     "@fullstacksjs/tsconfig": "1.1.0",
