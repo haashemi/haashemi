@@ -22,7 +22,7 @@
   "devDependencies": {
     "@fullstacksjs/tsconfig": "1.1.0",
     "@nuxt/eslint": "0.5.1",
-    "@nuxtjs/seo": "2.0.0-rc.18",
+    "@nuxtjs/seo": "2.0.0-rc.20",
     "@nuxtjs/tailwindcss": "6.12.1",
     "eslint": "9.9.0",
     "eslint-config-prettier": "9.1.0",
