@@ -13,7 +13,7 @@
     "@kalimahapps/vue-icons": "1.7.1",
     "@nuxt/content": "^2.13.2",
     "@nuxt/fonts": "^0.7.2",
-    "@nuxt/image": "^1.7.0",
+    "@nuxt/image": "^1.8.0",
     "clsx": "2.1.1",
     "nuxt": "3.12.4",
     "tailwind-merge": "2.5.2",
