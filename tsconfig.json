@@ -1,3 +1,10 @@
 {
-  "extends": ["./.nuxt/tsconfig.json"]
+  "extends": "@fullstacksjs/tsconfig/next",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "plugins": [{ "name": "next" }],
+    "paths": { "@/*": ["./*"] }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
