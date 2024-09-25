@@ -1,14 +1,6 @@
-import { fontFamily } from "tailwindcss/defaultTheme";
-
 export default {
+  theme: { extend: { fontFamily: { sans: ["Poppins"] } } },
   plugins: [],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Poppins", ...fontFamily.sans],
-      },
-    },
-  },
   content: [
     `./components/**/*.{vue,js,ts}`,
     `./layouts/**/*.vue`,
@@ -22,7 +14,4 @@ export default {
     `./error.{js,ts,vue}`,
     `./app.config.{js,ts}`,
   ],
-  future: {
-    hoverOnlyWhenSupported: true,
-  },
 };
