@@ -1,17 +1,15 @@
+import typography from "@tailwindcss/typography";
+import type { Config } from "tailwindcss";
+
 export default {
-  theme: { extend: { fontFamily: { sans: ["Poppins"] } } },
-  plugins: [],
-  content: [
-    `./components/**/*.{vue,js,ts}`,
-    `./layouts/**/*.vue`,
-    `./pages/**/*.vue`,
-    `./composables/**/*.{js,ts}`,
-    `./plugins/**/*.{js,ts}`,
-    `./utils/**/*.{js,ts}`,
-    `./App.{js,ts,vue}`,
-    `./app.{js,ts,vue}`,
-    `./Error.{js,ts,vue}`,
-    `./error.{js,ts,vue}`,
-    `./app.config.{js,ts}`,
-  ],
-};
+  darkMode: "class",
+  content: ["./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
+  plugins: [typography],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: "var(--font-poppins)",
+      },
+    },
+  },
+} as Config;
