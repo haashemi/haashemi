@@ -18,6 +18,8 @@
     "tailwind-merge": "2.5.2"
   },
   "devDependencies": {
+    "@content-collections/core": "0.7.1",
+    "@content-collections/next": "0.2.2",
     "@fullstacksjs/eslint-config": "10.11.1",
     "@fullstacksjs/tsconfig": "1.1.0",
     "@tailwindcss/typography": "0.5.15",
