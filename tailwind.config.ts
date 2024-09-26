@@ -12,4 +12,7 @@ export default {
       },
     },
   },
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 } as Config;
