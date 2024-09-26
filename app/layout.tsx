@@ -3,7 +3,6 @@ import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 
-import { Header } from "./_components/header";
 import { cn } from "./_lib/cn";
 
 const poppins = Poppins({
@@ -21,17 +20,14 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: "dark",
-  themeColor: "#000",
+  themeColor: "#09090b",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="dark">
-      <body className={cn("antialiased bg-black font-sans", poppins.variable)}>
-        <div className="min-h-screen w-full">
-          <Header />
-          {children}
-        </div>
+      <body className={cn("antialiased dark:bg-zinc-950 font-sans", poppins.variable)}>
+        <div className="mx-auto w-full max-w-prose">{children}</div>
       </body>
     </html>
   );
