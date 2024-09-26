@@ -11,15 +11,15 @@ const socials = [
 export default function Home() {
   return (
     <main className="flex w-full flex-col gap-5">
-      <div className="my-20 flex h-14 flex-col gap-4 px-4">
+      <div className="my-32 flex h-14 flex-col gap-4 px-4">
         <div className="flex flex-col items-center gap-2">
-          <h1 className="text-3xl font-medium">Ali Hashemi</h1>
-          <p className="text-zinc-400">Golang Developer</p>
+          <h1 className="text-4xl font-medium">Ali Hashemi</h1>
+          <p className="text-lg text-zinc-400">Golang Developer</p>
         </div>
 
-        <ul className="flex justify-center gap-3">
+        <ul className="flex justify-center gap-5">
           {socials.map((v) => (
-            <li key={v.label} className="group size-5">
+            <li key={v.label} className="group size-6">
               <a href={v.url} aria-label={v.label}>
                 <v.Icon className="size-full fill-zinc-500 transition-colors group-hover:fill-zinc-100" />
               </a>
