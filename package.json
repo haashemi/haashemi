@@ -23,7 +23,7 @@
     "@fullstacksjs/eslint-config": "10.11.1",
     "@fullstacksjs/tsconfig": "1.1.0",
     "@tailwindcss/typography": "0.5.15",
-    "@types/node": "22.5.5",
+    "@types/node": "22.7.4",
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
     "autoprefixer": "10.4.20",
