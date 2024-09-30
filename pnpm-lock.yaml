@@ -31,11 +31,11 @@ importers:
         version: 2.5.2
     devDependencies:
       '@content-collections/core':
-        specifier: 0.7.1
-        version: 0.7.1(typescript@5.6.2)
+        specifier: 0.7.2
+        version: 0.7.2(typescript@5.6.2)
       '@content-collections/next':
         specifier: 0.2.2
-        version: 0.2.2(@content-collections/core@0.7.1(typescript@5.6.2))(next@14.2.11(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+        version: 0.2.2(@content-collections/core@0.7.2(typescript@5.6.2))(next@14.2.11(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@fullstacksjs/eslint-config':
         specifier: 10.11.1
         version: 10.11.1(@babel/core@7.25.2)(@types/node@22.5.5)(eslint@8.57.0)(graphql@16.9.0)(prettier@3.3.3)(react@18.3.1)(tailwindcss@3.4.11)(typescript@5.6.2)
@@ -172,8 +172,8 @@ packages:
     resolution: {integrity: sha512-/l42B1qxpG6RdfYf343Uw1vmDjeNhneUXtzhojE7pDgfpEypmRhI6j1kr17XCVv4Cgl9HdAiQY2x0GwKm7rWCw==}
     engines: {node: '>=6.9.0'}
 
-  '@content-collections/core@0.7.1':
-    resolution: {integrity: sha512-qa9oR9Z9aHExNMu2LzAKIYC/rqgDnKQ7Lnc/AmKaYhf/PBWvJBvjXyeYQ3YFhEOrM6qdCqSKaml1fG7zzKpOrQ==}
+  '@content-collections/core@0.7.2':
+    resolution: {integrity: sha512-jOpQV6etstGF477CoMXdh4Cwl4fEbgZhty/WKxPsP3akx1LE4Ds8w89WZVsy8pttnR6KC4psrjCtlwa9WNS+rg==}
     peerDependencies:
       typescript: ^5.0.2
 
@@ -3075,7 +3075,7 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
 
-  '@content-collections/core@0.7.1(typescript@5.6.2)':
+  '@content-collections/core@0.7.2(typescript@5.6.2)':
     dependencies:
       '@parcel/watcher': 2.4.1
       camelcase: 8.0.0
@@ -3090,14 +3090,14 @@ snapshots:
       yaml: 2.5.1
       zod: 3.23.8
 
-  '@content-collections/integrations@0.2.0(@content-collections/core@0.7.1(typescript@5.6.2))':
+  '@content-collections/integrations@0.2.0(@content-collections/core@0.7.2(typescript@5.6.2))':
     dependencies:
-      '@content-collections/core': 0.7.1(typescript@5.6.2)
+      '@content-collections/core': 0.7.2(typescript@5.6.2)
 
-  '@content-collections/next@0.2.2(@content-collections/core@0.7.1(typescript@5.6.2))(next@14.2.11(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+  '@content-collections/next@0.2.2(@content-collections/core@0.7.2(typescript@5.6.2))(next@14.2.11(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
-      '@content-collections/core': 0.7.1(typescript@5.6.2)
-      '@content-collections/integrations': 0.2.0(@content-collections/core@0.7.1(typescript@5.6.2))
+      '@content-collections/core': 0.7.2(typescript@5.6.2)
+      '@content-collections/integrations': 0.2.0(@content-collections/core@0.7.2(typescript@5.6.2))
       next: 14.2.11(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@emnapi/runtime@1.2.0':
