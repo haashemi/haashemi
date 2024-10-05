@@ -1,16 +1,15 @@
 import "./globals.css";
 
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import { Header } from "./_components/header";
 import { cn } from "./_lib/cn";
 
-const poppins = Poppins({
+const font = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +26,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="dark">
-      <body className={cn("antialiased dark:bg-zinc-950 font-sans", poppins.variable)}>
+      <body className={cn("antialiased dark:bg-zinc-950", font.className)}>
         <div className="relative mx-auto w-full max-w-prose">
           <Header />
           {children}
