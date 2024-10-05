@@ -1,40 +1,11 @@
 import { allProjects } from "content-collections";
-import { FaEnvelope, FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa6";
 
-const socials = [
-  { label: "Email", url: "mailto:contact@haashemi.dev", Icon: FaEnvelope },
-  { label: "LinkedIn", url: "https://www.linkedin.com/in/haashemi", Icon: FaLinkedin },
-  { label: "GitHub", url: "https://github.com/haashemi", Icon: FaGithub },
-  { label: "Telegram", url: "https://t.me/Byfron", Icon: FaTelegram },
-];
+import { Section } from "./_components/section";
 
 export default function Home() {
   return (
     <main className="flex w-full flex-col gap-5">
-      <div className="my-32 flex h-14 flex-col gap-4 px-4">
-        <div className="flex flex-col items-center gap-2">
-          <h1 className="text-4xl font-medium">Ali Hashemi</h1>
-          <p className="text-lg text-zinc-400">Golang Developer</p>
-        </div>
-
-        <ul className="flex justify-center gap-5">
-          {socials.map((v) => (
-            <li key={v.label} className="group size-6">
-              <a href={v.url} aria-label={v.label}>
-                <v.Icon className="size-full fill-zinc-500 transition-colors group-hover:fill-zinc-100" />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="flex flex-col gap-5">
-        <div className="sticky top-0 z-10 flex w-full items-center gap-2 bg-gradient-to-b from-zinc-950 via-zinc-950 to-transparent py-2">
-          <span className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-zinc-700" />
-          <h2 className="text-center text-xl font-light text-zinc-500">Projects</h2>
-          <span className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-zinc-700" />
-        </div>
-
+      <Section title="Projects">
         <div className="flex flex-col gap-3 px-2">
           {allProjects
             .toSorted((a, b) => a.priority - b.priority)
@@ -55,7 +26,7 @@ export default function Home() {
               </a>
             ))}
         </div>
-      </div>
+      </Section>
     </main>
   );
 }
