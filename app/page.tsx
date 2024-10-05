@@ -1,10 +1,13 @@
 import { allProjects } from "content-collections";
 
 import { Section } from "./_components/section";
+import { TechStackSection } from "./_components/tech-stack";
 
 export default function Home() {
   return (
     <main className="flex w-full flex-col gap-5">
+      <TechStackSection />
+
       <Section title="Projects">
         <div className="flex flex-col gap-3 px-2">
           {allProjects
