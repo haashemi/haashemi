@@ -1,5 +1,6 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
 import { compileMarkdown } from "@content-collections/markdown";
+import remarkGfm from "remark-gfm";
 
 const blogs = defineCollection({
   name: "blogs",
@@ -10,7 +11,7 @@ const blogs = defineCollection({
     summary: z.string(),
   }),
   transform: async (document, context) => {
-    const html = await compileMarkdown(context, document);
+    const html = await compileMarkdown(context, document, { rehypePlugins: [remarkGfm] });
     return { ...document, html };
   },
 });
@@ -28,7 +29,7 @@ const works = defineCollection({
     mainPath: z.string().optional(),
   }),
   transform: async (document, context) => {
-    const html = await compileMarkdown(context, document);
+    const html = await compileMarkdown(context, document, { rehypePlugins: [remarkGfm] });
     return { ...document, html };
   },
 });
