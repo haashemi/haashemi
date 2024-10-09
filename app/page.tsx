@@ -15,7 +15,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section title="Work Experiences">
+      <Section title="Experiences">
         <div className="flex flex-col gap-3 px-2">
           {allWorks
             .toSorted((a, b) => b.startDate.getTime() - a.startDate.getTime())
