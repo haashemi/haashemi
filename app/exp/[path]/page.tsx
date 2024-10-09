@@ -1,6 +1,9 @@
+import { MDXContent } from "@content-collections/mdx/react";
 import { allWorks } from "content-collections";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+
+import { mdxComponents } from "@/app/_components/mdx-components";
 
 interface ExperiencePageProps {
   params: { path: string };
@@ -25,9 +28,9 @@ export default function ExperiencePage({ params: { path } }: ExperiencePageProps
 
   return (
     <main className="prose prose-zinc prose-invert px-3">
-      <div className="mb-10 h-0.5 w-full bg-gradient-to-r from-transparent via-zinc-700 to-transparent" />
-
-      <article dangerouslySetInnerHTML={{ __html: exp.html }} />
+      <article>
+        <MDXContent code={exp.mdx} components={mdxComponents} />
+      </article>
     </main>
   );
 }

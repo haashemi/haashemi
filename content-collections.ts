@@ -1,5 +1,5 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
-import { compileMarkdown } from "@content-collections/markdown";
+import { compileMDX } from "@content-collections/mdx";
 import remarkGfm from "remark-gfm";
 
 const blogs = defineCollection({
@@ -11,15 +11,15 @@ const blogs = defineCollection({
     summary: z.string(),
   }),
   transform: async (document, context) => {
-    const html = await compileMarkdown(context, document, { rehypePlugins: [remarkGfm] });
-    return { ...document, html };
+    const mdx = await compileMDX(context, document, { rehypePlugins: [remarkGfm] });
+    return { ...document, mdx };
   },
 });
 
 const works = defineCollection({
   name: "works",
   directory: "content/works",
-  include: "**/*.md",
+  include: "**/*.mdx",
   schema: (z) => ({
     title: z.string(), // Software Engineer, Backend Developer, etc.
     employmentType: z.string(), // Full-time, Freelance, etc.
@@ -29,8 +29,8 @@ const works = defineCollection({
     mainPath: z.string().optional(),
   }),
   transform: async (document, context) => {
-    const html = await compileMarkdown(context, document, { rehypePlugins: [remarkGfm] });
-    return { ...document, html };
+    const mdx = await compileMDX(context, document, { rehypePlugins: [remarkGfm] });
+    return { ...document, mdx };
   },
 });
 

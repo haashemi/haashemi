@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "clsx": "2.1.1",
+    "image-size": "1.1.1",
     "next": "14.2.14",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -19,11 +20,12 @@
   },
   "devDependencies": {
     "@content-collections/core": "0.7.2",
-    "@content-collections/markdown": "0.1.2",
+    "@content-collections/mdx": "0.1.6",
     "@content-collections/next": "0.2.3",
     "@fullstacksjs/eslint-config": "10.11.1",
     "@fullstacksjs/tsconfig": "1.1.0",
     "@tailwindcss/typography": "0.5.15",
+    "@types/mdx": "2.0.13",
     "@types/node": "22.7.4",
     "@types/react": "18.3.11",
     "@types/react-dom": "18.3.0",
