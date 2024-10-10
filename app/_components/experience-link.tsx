@@ -12,7 +12,7 @@ export const ExperienceLink = ({ exp }: { exp: Experience }) => {
       <span className="absolute left-0 top-0 size-full bg-gradient-to-r from-zinc-900 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative flex flex-col gap-2">
-        <h1 style={{ viewTransitionName: `exp-${exp._meta.path}` }}>{exp.company}</h1>
+        <h2>{exp.company}</h2>
 
         <div className="flex flex-col">
           <p className="text-sm text-zinc-500">
