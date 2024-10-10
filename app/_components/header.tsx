@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { FaEnvelope, FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa6";
 
 const socials = [
@@ -9,7 +9,7 @@ const socials = [
 ];
 
 export const Header = () => (
-  <header className="my-16 flex justify-between gap-5 px-5 sm:px-12">
+  <header className="my-16 flex justify-between gap-5 px-5 sm:px-12" style={{ viewTransitionName: "main-header" }}>
     <Link href="/" className="flex flex-col gap-2">
       <h1 className="text-4xl font-medium">Ali Hashemi</h1>
       <p className="text-lg text-zinc-400">Golang Developer</p>

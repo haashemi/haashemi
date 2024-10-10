@@ -1,5 +1,5 @@
 import type { Blog } from "content-collections";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 export const BlogLink = ({ blog }: { blog: Blog }) => {
   return (
