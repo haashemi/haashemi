@@ -1,3 +1,4 @@
+import type { IconType } from "react-icons";
 import {
   SiCaddy,
   SiDocker,
@@ -10,10 +11,8 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-import { Section } from "./section";
-
 // Some of the things that I use often.
-const techStack = [
+export const techStack = [
   // Programming languages
   { title: "Go", Icon: SiGo },
   { title: "Typescript", Icon: SiTypescript },
@@ -34,19 +33,9 @@ const techStack = [
   { title: "Git", Icon: SiGit },
 ] as const;
 
-export const TechStackSection = () => (
-  <Section title="Tech Stack">
-    <div className="flex flex-wrap gap-3 px-3">
-      {techStack.map((ts) => (
-        <li
-          key={ts.title}
-          aria-label={ts.title}
-          className="flex items-center gap-3 border border-zinc-700 px-3 py-2 text-zinc-200"
-        >
-          {<ts.Icon className="h-full" />}
-          <span className="text-sm">{ts.title.toUpperCase()}</span>
-        </li>
-      ))}
-    </div>
-  </Section>
+export const TechStack = ({ title, Icon }: { title: string; Icon: IconType }) => (
+  <li aria-label={title} className="flex items-center gap-3 border border-zinc-700 px-3 py-2 text-zinc-200">
+    {<Icon className="h-full" />}
+    <span className="text-sm">{title.toUpperCase()}</span>
+  </li>
 );
