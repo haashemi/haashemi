@@ -36,6 +36,4 @@ const exps = defineCollection({
   },
 });
 
-export default defineConfig({
-  collections: [blogs, exps],
-});
+export default defineConfig({ collections: [blogs, exps] });
