@@ -40,8 +40,8 @@ importers:
         specifier: 0.7.2
         version: 0.7.2(typescript@5.6.3)
       '@content-collections/mdx':
-        specifier: 0.1.6
-        version: 0.1.6(@content-collections/core@0.7.2(typescript@5.6.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 0.2.0
+        version: 0.2.0(@content-collections/core@0.7.2(typescript@5.6.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@content-collections/next':
         specifier: 0.2.3
         version: 0.2.3(@content-collections/core@0.7.2(typescript@5.6.3))(next@14.2.15(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -234,12 +234,12 @@ packages:
     peerDependencies:
       '@content-collections/core': 0.x
 
-  '@content-collections/mdx@0.1.6':
-    resolution: {integrity: sha512-Q0v+yBITQx+b2nRydhWKrYflp/I1LpSRWoeKO3deSCDsQuAnGkJ+Yc1cSxre0iX9no9eccyni8Jrv0tEN7AzgQ==}
+  '@content-collections/mdx@0.2.0':
+    resolution: {integrity: sha512-Up42WaoZN+iYLO7rI59hy4ivw+Q7xXoezmoyjFFQjE0P9Mi3p5jGDdpsuXYmUiQOMZubPLClZHAbntk/27PxSQ==}
     peerDependencies:
       '@content-collections/core': 0.x
-      react: ^18.0.0
-      react-dom: ^18.2.0
+      react: '>= 18'
+      react-dom: '>= 18'
 
   '@content-collections/next@0.2.3':
     resolution: {integrity: sha512-8rteKhfu8sJOtQAzVt4iMkgbCso2yzfTzq6kXFYNW6HwDJzaFjLeHiIO4Pa6oFOCh3w9CApFdloTAKWzQJKpHQ==}
@@ -1735,6 +1735,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -3647,7 +3648,7 @@ snapshots:
     dependencies:
       '@content-collections/core': 0.7.2(typescript@5.6.3)
 
-  '@content-collections/mdx@0.1.6(@content-collections/core@0.7.2(typescript@5.6.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@content-collections/mdx@0.2.0(@content-collections/core@0.7.2(typescript@5.6.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@content-collections/core': 0.7.2(typescript@5.6.3)
       esbuild: 0.21.5
