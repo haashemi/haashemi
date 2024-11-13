@@ -1,6 +1,15 @@
+import type { Options } from "@content-collections/mdx";
+
 import { defineCollection, defineConfig } from "@content-collections/core";
 import { compileMDX } from "@content-collections/mdx";
+import remarkCustomHeaderId from "remark-custom-header-id";
 import remarkGfm from "remark-gfm";
+import remarkGitHubAlters from "remark-github-alerts";
+
+const mdxOptions: Options = {
+  rehypePlugins: [remarkGfm],
+  remarkPlugins: [remarkGitHubAlters, remarkCustomHeaderId],
+};
 
 const blogs = defineCollection({
   name: "blogs",
@@ -12,10 +21,7 @@ const blogs = defineCollection({
     updatedAt: z.coerce.date().optional(),
     publishedAt: z.coerce.date().optional(),
   }),
-  transform: async (document, context) => {
-    const mdx = await compileMDX(context, document, { rehypePlugins: [remarkGfm] });
-    return { ...document, mdx };
-  },
+  transform: async (document, context) => ({ ...document, mdx: await compileMDX(context, document, mdxOptions) }),
 });
 
 const exps = defineCollection({
@@ -30,10 +36,7 @@ const exps = defineCollection({
     endDate: z.coerce.date().optional(),
     mainPath: z.string().optional(),
   }),
-  transform: async (document, context) => {
-    const mdx = await compileMDX(context, document, { rehypePlugins: [remarkGfm] });
-    return { ...document, mdx };
-  },
+  transform: async (document, context) => ({ ...document, mdx: await compileMDX(context, document, mdxOptions) }),
 });
 
 export default defineConfig({ collections: [blogs, exps] });
