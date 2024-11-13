@@ -1,9 +1,9 @@
-import { MDXContent } from "@content-collections/mdx/react";
-import { allBlogs } from "content-collections";
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
 
 import { mdxComponents } from "@/app/_components/mdx-components";
+import { MDXContent } from "@content-collections/mdx/react";
+import { allBlogs } from "content-collections";
+import { notFound } from "next/navigation";
 
 interface BlogPageProps {
   params: { path: string };

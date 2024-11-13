@@ -1,8 +1,12 @@
 import "./globals.css";
 
+import "remark-github-alerts/styles/github-colors-dark-class.css";
+import "remark-github-alerts/styles/github-base.css";
+
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk } from "next/font/google";
+
 import { ViewTransitions } from "next-view-transitions";
+import { Space_Grotesk } from "next/font/google";
 
 import { Header } from "./_components/header";
 import { cn } from "./_lib/cn";

@@ -1,6 +1,7 @@
-import getImageSize from "image-size";
 import type { MDXComponents } from "mdx/types";
 import type { ImageProps } from "next/image";
+
+import getImageSize from "image-size";
 import Image from "next/image";
 import path from "path";
 
@@ -27,15 +28,15 @@ export const mdxComponents: MDXComponents = {
       return (
         <Image
           {...(props as ImageProps)}
-          width={width}
           height={height}
-          sizes="650px"
-          quality={100}
+          width={width}
           className="h-auto w-full dark:bg-zinc-900"
+          quality={100}
+          sizes="650px"
         />
       );
     }
 
-    return <Image {...(props as ImageProps)} sizes="65ch" className="h-auto w-full dark:bg-zinc-900" />;
+    return <Image {...(props as ImageProps)} className="h-auto w-full dark:bg-zinc-900" sizes="65ch" />;
   },
 };

@@ -1,4 +1,5 @@
 import type { Experience } from "content-collections";
+
 import { Link } from "next-view-transitions";
 
 export const ExperienceLink = ({ exp }: { exp: Experience }) => {
@@ -6,8 +7,8 @@ export const ExperienceLink = ({ exp }: { exp: Experience }) => {
 
   return (
     <Link
-      href={`/exp/${path}`}
       className="group relative flex-1 border-l-2 border-zinc-800 px-4 py-2 transition-colors duration-300 hover:border-zinc-500"
+      href={`/exp/${path}`}
     >
       <span className="absolute left-0 top-0 size-full bg-gradient-to-r from-zinc-900 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 

@@ -11,7 +11,7 @@ export default function Home() {
       <Section title="Tech Stack">
         <div className="flex flex-wrap gap-3 px-3">
           {techStack.map((ts) => (
-            <TechStack key={ts.title} title={ts.title} Icon={ts.Icon} />
+            <TechStack Icon={ts.Icon} key={ts.title} title={ts.title} />
           ))}
         </div>
       </Section>
@@ -20,10 +20,10 @@ export default function Home() {
         <div className="flex flex-col gap-3 px-2">
           {allBlogs
             .filter((post) => post.publishedAt !== undefined)
-            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+
             .toSorted((a, b) => b.publishedAt!.getTime() - a.publishedAt!.getTime())
             .map((post) => (
-              <BlogLink key={post._meta.path} blog={post} />
+              <BlogLink blog={post} key={post._meta.path} />
             ))}
         </div>
       </Section>
@@ -33,7 +33,7 @@ export default function Home() {
           {allExperiences
             .toSorted((a, b) => b.startDate.getTime() - a.startDate.getTime())
             .map((post) => (
-              <ExperienceLink key={post._meta.path} exp={post} />
+              <ExperienceLink exp={post} key={post._meta.path} />
             ))}
         </div>
       </Section>
