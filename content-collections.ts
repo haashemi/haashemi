@@ -21,7 +21,10 @@ const blogs = defineCollection({
     updatedAt: z.coerce.date().optional(),
     publishedAt: z.coerce.date().optional(),
   }),
-  transform: async (document, context) => ({ ...document, mdx: await compileMDX(context, document, mdxOptions) }),
+  transform: async (document, context) => ({
+    ...document,
+    mdx: await compileMDX(context, document, mdxOptions),
+  }),
 });
 
 const exps = defineCollection({
@@ -36,7 +39,10 @@ const exps = defineCollection({
     endDate: z.coerce.date().optional(),
     mainPath: z.string().optional(),
   }),
-  transform: async (document, context) => ({ ...document, mdx: await compileMDX(context, document, mdxOptions) }),
+  transform: async (document, context) => ({
+    ...document,
+    mdx: await compileMDX(context, document, mdxOptions),
+  }),
 });
 
 export default defineConfig({ collections: [blogs, exps] });

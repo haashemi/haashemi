@@ -20,7 +20,6 @@ export default function Home() {
         <div className="flex flex-col gap-3 px-2">
           {allBlogs
             .filter((post) => post.publishedAt !== undefined)
-
             .toSorted((a, b) => b.publishedAt!.getTime() - a.publishedAt!.getTime())
             .map((post) => (
               <BlogLink blog={post} key={post._meta.path} />
