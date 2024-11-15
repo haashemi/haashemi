@@ -45,6 +45,9 @@ importers:
       '@content-collections/next':
         specifier: 0.2.3
         version: 0.2.3(@content-collections/core@0.7.3(typescript@5.6.3))(next@14.2.15(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@fullstacksjs/config':
+        specifier: 1.1.0
+        version: 1.1.0
       '@fullstacksjs/eslint-config':
         specifier: 11.4.0
         version: 11.4.0(@typescript-eslint/eslint-plugin@8.10.0(@typescript-eslint/parser@8.10.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3))(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3))(@typescript-eslint/parser@8.10.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3))(eslint-config-prettier@9.1.0(eslint@9.14.0(jiti@1.21.6)))(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.10.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3))(eslint@9.14.0(jiti@1.21.6)))(eslint@9.14.0(jiti@1.21.6))(prettier@3.3.3)(react@18.3.1)(tailwindcss@3.4.14)(typescript@5.6.3)
@@ -340,6 +343,10 @@ packages:
 
   '@fal-works/esbuild-plugin-global-externals@2.1.2':
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
+
+  '@fullstacksjs/config@1.1.0':
+    resolution: {integrity: sha512-fOLzRRYFEQHJbhhGIro9DNqqhWejL0/Ah5ag2p9Y89knFI6p8awIAwoao782e95ASsdLmV/b1QcUuGtGAtZYTA==}
+    engines: {node: '>=16'}
 
   '@fullstacksjs/eslint-config@11.4.0':
     resolution: {integrity: sha512-T6hgoq8iqAkIJu+j+pPDT68RAmztozRiGTvdOBQO8CruD8ovIFX4KRyCN6XSPWMmR7HYbtOkUz1V3WoZW71T1A==}
@@ -3377,6 +3384,8 @@ snapshots:
       levn: 0.4.1
 
   '@fal-works/esbuild-plugin-global-externals@2.1.2': {}
+
+  '@fullstacksjs/config@1.1.0': {}
 
   '@fullstacksjs/eslint-config@11.4.0(@typescript-eslint/eslint-plugin@8.10.0(@typescript-eslint/parser@8.10.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3))(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3))(@typescript-eslint/parser@8.10.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3))(eslint-config-prettier@9.1.0(eslint@9.14.0(jiti@1.21.6)))(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.10.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3))(eslint@9.14.0(jiti@1.21.6)))(eslint@9.14.0(jiti@1.21.6))(prettier@3.3.3)(react@18.3.1)(tailwindcss@3.4.14)(typescript@5.6.3)':
     dependencies:
