@@ -2,13 +2,14 @@ import type { Options } from "@content-collections/mdx";
 
 import { defineCollection, defineConfig } from "@content-collections/core";
 import { compileMDX } from "@content-collections/mdx";
+import rehypeSlug from "rehype-slug";
 import remarkCustomHeaderId from "remark-custom-header-id";
 import remarkGfm from "remark-gfm";
 import remarkGitHubAlters from "remark-github-alerts";
 
 const mdxOptions: Options = {
-  rehypePlugins: [remarkGfm],
-  remarkPlugins: [remarkGitHubAlters, remarkCustomHeaderId],
+  rehypePlugins: [rehypeSlug],
+  remarkPlugins: [remarkGfm, remarkGitHubAlters, remarkCustomHeaderId],
 };
 
 const blogs = defineCollection({
