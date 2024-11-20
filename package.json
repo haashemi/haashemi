@@ -22,7 +22,7 @@
   "devDependencies": {
     "@content-collections/core": "0.7.3",
     "@content-collections/mdx": "0.2.0",
-    "@content-collections/next": "0.2.3",
+    "@content-collections/next": "0.2.4",
     "@fullstacksjs/config": "1.1.0",
     "@fullstacksjs/eslint-config": "11.4.0",
     "@fullstacksjs/tsconfig": "1.1.0",
