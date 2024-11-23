@@ -17,29 +17,29 @@
     "react-dom": "18.3.1",
     "react-icons": "5.3.0",
     "sharp": "0.33.5",
-    "tailwind-merge": "2.5.3"
+    "tailwind-merge": "2.5.4"
   },
   "devDependencies": {
     "@content-collections/core": "0.7.3",
     "@content-collections/mdx": "0.2.0",
-    "@content-collections/next": "0.2.3",
+    "@content-collections/next": "0.2.4",
     "@fullstacksjs/config": "1.1.0",
     "@fullstacksjs/eslint-config": "11.4.0",
     "@fullstacksjs/tsconfig": "1.1.0",
     "@tailwindcss/typography": "0.5.15",
     "@types/mdx": "2.0.13",
-    "@types/node": "22.9.0",
+    "@types/node": "22.9.3",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "autoprefixer": "10.4.20",
-    "eslint": "9.14.0",
+    "eslint": "9.15.0",
     "postcss": "8.4.49",
     "prettier": "3.3.3",
     "rehype-slug": "6.0.0",
     "remark-custom-header-id": "1.0.0",
     "remark-gfm": "4.0.0",
     "remark-github-alerts": "0.1.0",
-    "tailwindcss": "3.4.14",
-    "typescript": "5.6.3"
+    "tailwindcss": "3.4.15",
+    "typescript": "5.7.2"
   }
 }
