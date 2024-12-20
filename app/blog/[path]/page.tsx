@@ -29,7 +29,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
   if (!post) notFound();
 
   return (
-    <main className="prose prose-zinc prose-invert px-3">
+    <main className="prose prose-zinc prose-invert overflow-hidden px-3" style={{ overflowWrap: "break-word" }}>
       <article>
         <MDXContent code={post.mdx} components={mdxComponents} />
       </article>
