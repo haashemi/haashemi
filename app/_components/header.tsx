@@ -1,4 +1,4 @@
-import { Link } from "next-view-transitions";
+import Link from "next/link";
 import { FaEnvelope, FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa6";
 
 const socials = [

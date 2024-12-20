@@ -1,6 +1,6 @@
 import type { Experience } from "content-collections";
 
-import { Link } from "next-view-transitions";
+import Link from "next/link";
 
 export const ExperienceLink = ({ exp }: { exp: Experience }) => {
   const path: string = exp.mainPath ?? exp._meta.path;
