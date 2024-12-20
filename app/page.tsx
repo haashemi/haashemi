@@ -11,7 +11,7 @@ export default function Home() {
       <Section title="Tech Stack">
         <div className="flex flex-wrap gap-3 px-3">
           {techStack.map((ts) => (
-            <TechStack Icon={ts.Icon} key={ts.title} title={ts.title} />
+            <TechStack key={ts.title} title={ts.title} Icon={ts.Icon} />
           ))}
         </div>
       </Section>
@@ -22,7 +22,7 @@ export default function Home() {
             .filter((post) => post.publishedAt !== undefined)
             .toSorted((a, b) => b.publishedAt!.getTime() - a.publishedAt!.getTime())
             .map((post) => (
-              <BlogLink blog={post} key={post._meta.path} />
+              <BlogLink key={post._meta.path} blog={post} />
             ))}
         </div>
       </Section>

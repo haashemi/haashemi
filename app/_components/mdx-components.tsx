@@ -29,14 +29,14 @@ export const mdxComponents: MDXComponents = {
         <Image
           {...(props as ImageProps)}
           height={height}
+          sizes="650px"
           width={width}
           className="h-auto w-full dark:bg-zinc-900"
           quality={100}
-          sizes="650px"
         />
       );
     }
 
-    return <Image {...(props as ImageProps)} className="h-auto w-full dark:bg-zinc-900" sizes="65ch" />;
+    return <Image {...(props as ImageProps)} sizes="65ch" className="h-auto w-full dark:bg-zinc-900" />;
   },
 };
