@@ -6,12 +6,14 @@ import { allExperiences } from "content-collections";
 import { notFound } from "next/navigation";
 
 interface ExperiencePageProps {
-  params: { path: string };
+  params: Promise<{ path: string }>;
 }
 
 export const generateStaticParams = () => allExperiences.map((work) => ({ path: work._meta.path }));
 
-export function generateMetadata({ params: { path } }: ExperiencePageProps): Metadata {
+export async function generateMetadata({ params }: ExperiencePageProps): Promise<Metadata> {
+  const { path } = await params;
+
   const exp = allExperiences.find((v) => v._meta.path === path);
 
   if (!exp) notFound();
@@ -19,7 +21,9 @@ export function generateMetadata({ params: { path } }: ExperiencePageProps): Met
   return { title: `${exp.company} - Ali Hashemi` };
 }
 
-export default function ExperiencePage({ params: { path } }: ExperiencePageProps) {
+export default async function ExperiencePage({ params }: ExperiencePageProps) {
+  const { path } = await params;
+
   const exp = allExperiences.find((v) => v._meta.path === path);
 
   if (!exp) notFound();

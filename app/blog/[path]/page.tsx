@@ -6,12 +6,14 @@ import { allBlogs } from "content-collections";
 import { notFound } from "next/navigation";
 
 interface BlogPageProps {
-  params: { path: string };
+  params: Promise<{ path: string }>;
 }
 
 export const generateStaticParams = () => allBlogs.map((work) => ({ path: work._meta.path }));
 
-export function generateMetadata({ params: { path } }: BlogPageProps): Metadata {
+export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+  const { path } = await params;
+
   const post = allBlogs.find((v) => v._meta.path === path);
 
   if (!post) notFound();
@@ -19,7 +21,9 @@ export function generateMetadata({ params: { path } }: BlogPageProps): Metadata 
   return { title: `${post.title} - Ali Hashemi` };
 }
 
-export default function BlogPage({ params: { path } }: BlogPageProps) {
+export default async function BlogPage({ params }: BlogPageProps) {
+  const { path } = await params;
+
   const post = allBlogs.find((v) => v._meta.path === path);
 
   if (!post) notFound();
