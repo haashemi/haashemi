@@ -16,7 +16,7 @@
     "react-dom": "19.0.0",
     "react-icons": "5.4.0",
     "sharp": "0.33.5",
-    "tailwind-merge": "2.5.5"
+    "tailwind-merge": "2.6.0"
   },
   "devDependencies": {
     "@content-collections/core": "0.8.0",
