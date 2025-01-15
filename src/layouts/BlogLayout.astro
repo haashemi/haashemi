@@ -1,0 +1,38 @@
+---
+import "remark-github-blockquote-alert/alert.css";
+import Header from "@/app/components/Header.astro";
+
+interface Props {
+  title: string;
+  summary: string;
+}
+
+const { title, summary } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <title>{title} | Ali Hashemi</title>
+    <meta name="description" content={summary} />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body class="antialiased dark:bg-zinc-950">
+    <div class="relative mx-auto w-full max-w-prose">
+      <Header />
+      <slot />
+      <div class="h-20"></div>
+
+      <div class="fixed left-0 top-0 h-10 w-full bg-gradient-to-b from-zinc-950 to-transparent"></div>
+      <div class="fixed bottom-0 left-0 h-10 w-full bg-gradient-to-t from-zinc-950 to-transparent"></div>
+    </div>
+  </body>
+</html>
+
+<style>
+  html {
+    color-scheme: dark;
+  }
+</style>
