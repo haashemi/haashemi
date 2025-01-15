@@ -1,6 +1,5 @@
 ---
-import MarkdownH1 from "@/app/components/MarkdownH1.astro";
-import Layout from "@/app/layouts/Layout.astro";
+import BlogLayout from "@/app/layouts/BlogLayout.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -12,10 +11,10 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<Layout>
+<BlogLayout summary={post.data.summary} title={post.data.title}>
   <main class="prose prose-zinc prose-invert overflow-hidden px-3" style={{ overflowWrap: "break-word" }}>
     <article>
-      <Content components={{ h1: MarkdownH1 }} />
+      <Content />
     </article>
   </main>
-</Layout>
+</BlogLayout>
