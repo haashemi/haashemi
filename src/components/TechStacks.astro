@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon/components";
+
+// Some of the things that I use often.
+const techStacks = [
+  // Programming languages
+  { title: "Go", icon: "simple-icons:go" },
+  { title: "Typescript", icon: "simple-icons:typescript" },
+
+  // Frameworks
+  { title: "Next.JS", icon: "simple-icons:nextdotjs" },
+
+  // Storage related
+  { title: "Postgres", icon: "simple-icons:postgresql" },
+  { title: "Minio", icon: "simple-icons:minio" },
+
+  // Server related
+  { title: "Docker", icon: "simple-icons:docker" },
+  { title: "Nginx", icon: "simple-icons:nginx" },
+  { title: "Caddy", icon: "simple-icons:caddy" },
+
+  // General
+  { title: "Git", icon: "simple-icons:git" },
+] as const;
+---
+
+<ul class="flex flex-wrap gap-3 px-3">
+  {
+    techStacks.map((ts) => (
+      <li aria-label={ts.title} class="flex items-center gap-3 border border-zinc-700 px-3 py-2 text-zinc-200">
+        <Icon class="h-full" name={ts.icon} />
+        <span class="text-sm">{ts.title.toUpperCase()}</span>
+      </li>
+    ))
+  }
+</ul>

@@ -1,0 +1,29 @@
+---
+import { Icon } from "astro-icon/components";
+
+const socials = [
+  { label: "Email", url: "mailto:contact@haashemi.dev", icon: "fa6-solid:at" },
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/haashemi", icon: "fa6-brands:linkedin" },
+  { label: "GitHub", url: "https://github.com/haashemi", icon: "fa6-brands:github" },
+  { label: "Telegram", url: "https://t.me/Byfron", icon: "fa6-brands:telegram" },
+];
+---
+
+<header class="my-16 flex justify-between gap-5 px-5 sm:px-12" style={{ viewTransitionName: "main-header" }}>
+  <a class="flex flex-col gap-2" href="/">
+    <h1 class="text-4xl font-medium">Ali Hashemi</h1>
+    <p class="text-lg text-zinc-400">Golang Developer</p>
+  </a>
+
+  <ul class="grid grid-cols-2 gap-5 self-center justify-self-center">
+    {
+      socials.map((v) => (
+        <li class="group size-6">
+          <a aria-label={v.label} href={v.url}>
+            <Icon class="size-full fill-zinc-500 transition-colors group-hover:fill-zinc-100" name={v.icon} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</header>

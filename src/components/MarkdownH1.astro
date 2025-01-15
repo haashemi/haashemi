@@ -1,0 +1,13 @@
+---
+const props = Astro.props;
+---
+
+<div
+  class="mb-4 flex w-full items-center justify-center gap-2 bg-gradient-to-b from-zinc-950 via-zinc-950 to-transparent py-2"
+>
+  <span class="h-0.5 w-10 bg-gradient-to-r from-transparent to-zinc-500"></span>
+  <h1 {...props} class="mb-0">
+    <slot />
+  </h1>
+  <span class="h-0.5 flex-1 bg-gradient-to-l from-transparent to-zinc-500"></span>
+</div>

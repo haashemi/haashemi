@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+
+import BlogLink from "../components/BlogLink.astro";
+import ExperienceLink from "../components/ExperienceLink.astro";
+import Section from "../components/Section.astro";
+import TechStacks from "../components/TechStacks.astro";
+import Layout from "../layouts/Layout.astro";
+
+const allBlogs = await getCollection("blog");
+const allExperiences = await getCollection("exp");
+---
+
+<Layout>
+  <main class="flex w-full flex-col gap-5">
+    <Section title="Tech Stack">
+      <div class="flex flex-wrap gap-3 px-3">
+        <TechStacks />
+      </div>
+    </Section>
+
+    <Section title="Blogs">
+      <div class="flex flex-col gap-3 px-2">
+        {
+          allBlogs
+            .toSorted((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+            .map((post) => <BlogLink summary={post.data.summary} title={post.data.title} url={post.id} />)
+        }
+      </div>
+    </Section>
+
+    <Section title="Experiences">
+      <div class="flex flex-col gap-3 px-2">
+        {
+          allExperiences
+            .toSorted((a, b) => b.data.startDate.getTime() - a.data.startDate.getTime())
+            .map((post) => (
+              <ExperienceLink
+                endDate={post.data.endDate}
+                startDate={post.data.startDate}
+                title={post.data.title}
+                url={post.id}
+                company={post.data.company}
+                employmentType={post.data.employmentType}
+              />
+            ))
+        }
+      </div>
+    </Section>
+  </main>
+</Layout>
