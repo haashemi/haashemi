@@ -9,7 +9,11 @@ const socials = [
 ];
 ---
 
-<header class="my-16 flex justify-between gap-5 px-5 sm:px-12" style={{ viewTransitionName: "main-header" }}>
+<header
+  class="my-16 flex justify-between gap-5 px-5 sm:px-12"
+  style={{ viewTransitionName: "main-header" }}
+  transition:name="main-header"
+>
   <a class="flex flex-col gap-2" href="/">
     <h1 class="text-4xl font-medium">Ali Hashemi</h1>
     <p class="text-lg text-zinc-400">Golang Developer</p>
@@ -20,7 +24,7 @@ const socials = [
       socials.map((v) => (
         <li class="group size-6">
           <a aria-label={v.label} href={v.url}>
-            <Icon class="size-full fill-zinc-500 transition-colors group-hover:fill-zinc-100" name={v.icon} />
+            <Icon class="size-full text-zinc-500 transition-colors group-hover:text-zinc-100" name={v.icon} />
           </a>
         </li>
       ))
