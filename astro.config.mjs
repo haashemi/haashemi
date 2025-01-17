@@ -9,6 +9,7 @@ import { SITE } from "./src/consts";
 
 export default defineConfig({
   site: SITE.URL,
+  devToolbar: { enabled: false },
   integrations: [mdx(), sitemap(), tailwind(), icon()],
   markdown: {
     remarkPlugins: [remarkAlert],
