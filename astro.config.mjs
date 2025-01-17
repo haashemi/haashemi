@@ -5,8 +5,10 @@ import icon from "astro-icon";
 import { defineConfig } from "astro/config";
 import { remarkAlert } from "remark-github-blockquote-alert";
 
+import { SITE } from "./src/consts";
+
 export default defineConfig({
-  site: "https://haashemi.dev",
+  site: SITE.URL,
   integrations: [mdx(), sitemap(), tailwind(), icon()],
   markdown: {
     remarkPlugins: [remarkAlert],
