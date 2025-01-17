@@ -1,13 +1,8 @@
 {
-  "extends": "@fullstacksjs/tsconfig/next",
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "moduleResolution": "bundler",
-    "plugins": [{ "name": "next" }],
-    "paths": {
-      "@/*": ["./*"],
-      "content-collections": ["./.content-collections/generated"]
-    }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "paths": { "@/app/*": ["src/*"] }
+  }
 }

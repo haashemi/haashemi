@@ -1,0 +1,32 @@
+---
+import Head from "@/app/components/Head.astro";
+import Header from "@/app/components/Header.astro";
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <slot name="head">
+      <Head title={`Ali Hashemi`} description={"Ali Hashemi's personal website"} />
+    </slot>
+  </head>
+
+  <body class="relative mx-auto w-full max-w-prose font-sans antialiased dark:bg-zinc-950">
+    <Header />
+
+    <main>
+      <slot />
+    </main>
+
+    <!-- Bottom shadow -->
+    <div class="h-20"></div>
+    <div class="fixed left-0 top-0 h-10 w-full bg-gradient-to-b from-zinc-950 to-transparent"></div>
+    <div class="fixed bottom-0 left-0 h-10 w-full bg-gradient-to-t from-zinc-950 to-transparent"></div>
+  </body>
+</html>
+
+<style>
+  html {
+    color-scheme: dark;
+  }
+</style>
