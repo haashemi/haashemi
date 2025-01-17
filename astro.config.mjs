@@ -12,6 +12,6 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind(), icon()],
   markdown: {
     remarkPlugins: [remarkAlert],
-    shikiConfig: { theme: "poimandres" },
+    shikiConfig: { theme: "github-dark-default" },
   },
 });
