@@ -4,7 +4,5 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": { "@/app/*": ["src/*"] }
-  },
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+  }
 }
