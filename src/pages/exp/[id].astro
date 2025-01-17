@@ -1,22 +1,27 @@
 ---
-import BlogLayout from "@/app/layouts/BlogLayout.astro";
+import Head from "@/app/components/Head.astro";
+import Layout from "@/app/layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("exp");
-  return posts.map((post) => ({ params: { id: post.id }, props: { post } }));
+  return posts.map((post) => ({ params: { id: post.slug }, props: { post } }));
 }
 
 const { post } = Astro.props;
 
-const title = `${post.data.title} @${post.data.company}`;
+const title = `${post.data.title} @${post.data.company} | Ali Hashemi`;
+const description = `My experiences as a ${title}`;
+
 const { Content } = await render(post);
 ---
 
-<BlogLayout summary={`My experiences as a ${title}`} title={title}>
+<Layout>
+  <Head title={title} description={description} slot="head" />
+
   <main class="prose prose-zinc prose-invert overflow-hidden px-3" style={{ overflowWrap: "break-word" }}>
     <article>
       <Content />
     </article>
   </main>
-</BlogLayout>
+</Layout>
