@@ -24,7 +24,7 @@ const allExperiences = await getCollection("exp");
         {
           allBlogs
             .toSorted((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
-            .map((post) => <BlogLink summary={post.data.summary} title={post.data.title} url={post.id} />)
+            .map((post) => <BlogLink summary={post.data.summary} title={post.data.title} url={post.slug} />)
         }
       </div>
     </Section>
@@ -39,7 +39,7 @@ const allExperiences = await getCollection("exp");
                 endDate={post.data.endDate}
                 startDate={post.data.startDate}
                 title={post.data.title}
-                url={post.id}
+                url={post.slug}
                 company={post.data.company}
                 employmentType={post.data.employmentType}
               />
