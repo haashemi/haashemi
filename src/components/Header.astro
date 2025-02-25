@@ -1,11 +1,11 @@
 ---
-import { Icon } from "astro-icon/components";
+import { FaAt, FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa6";
 
 const socials = [
-  { label: "Email", url: "mailto:contact@haashemi.dev", icon: "fa6-solid:at" },
-  { label: "LinkedIn", url: "https://www.linkedin.com/in/haashemi", icon: "fa6-brands:linkedin" },
-  { label: "GitHub", url: "https://github.com/haashemi", icon: "fa6-brands:github" },
-  { label: "Telegram", url: "https://t.me/Byfron", icon: "fa6-brands:telegram" },
+  { label: "Email", url: "mailto:contact@haashemi.dev", Icon: FaAt },
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/haashemi", Icon: FaLinkedin },
+  { label: "GitHub", url: "https://github.com/haashemi", Icon: FaGithub },
+  { label: "Telegram", url: "https://t.me/Byfron", Icon: FaTelegram },
 ];
 ---
 
@@ -24,7 +24,7 @@ const socials = [
       socials.map((v) => (
         <li class="group size-6">
           <a aria-label={v.label} href={v.url}>
-            <Icon class="size-full text-zinc-500 transition-colors group-hover:text-zinc-100" name={v.icon} />
+            <v.Icon className="size-full text-zinc-500 transition-colors group-hover:text-zinc-100" />
           </a>
         </li>
       ))

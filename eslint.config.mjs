@@ -1,13 +1,4 @@
-import { init } from "@fullstacksjs/eslint-config";
 import eslintPluginAstro from "eslint-plugin-astro";
+import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
-export default [
-  ...init(),
-  ...eslintPluginAstro.configs["flat/recommended"],
-  {
-    files: ["**/*.astro", "**/*.ts"],
-    rules: {
-      "import/no-unresolved": ["error", { ignore: ["astro:content", "astro:transitions"] }],
-    },
-  },
-];
+export default [...eslintPluginAstro.configs.recommended, eslintPluginPrettierRecommended];

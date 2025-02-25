@@ -1,5 +1,5 @@
 export const SITE = {
-  URL: "https://haashemi.dev",
+  URL: "https://www.haashemi.dev",
   TITLE: "Ali Hashemi",
   DESCRIPTION: "Welcome to my website!",
 };

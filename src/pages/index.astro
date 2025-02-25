@@ -1,11 +1,11 @@
 ---
 import { getCollection } from "astro:content";
 
-import BlogLink from "../components/BlogLink.astro";
-import ExperienceLink from "../components/ExperienceLink.astro";
-import Section from "../components/Section.astro";
-import TechStacks from "../components/TechStacks.astro";
-import Layout from "../layouts/Layout.astro";
+import BlogLink from "@hx/components/BlogLink.astro";
+import ExperienceLink from "@hx/components/ExperienceLink.astro";
+import Section from "@hx/components/Section.astro";
+import TechStacks from "@hx/components/TechStacks.astro";
+import Layout from "@hx/layouts/Layout.astro";
 
 const allBlogs = await getCollection("blog");
 const allExperiences = await getCollection("exp");

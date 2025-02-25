@@ -1,14 +1,27 @@
-import mdx from "@astrojs/mdx";
+// @ts-check
+import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
-import icon from "astro-icon";
+import tailwindcss from "@tailwindcss/vite";
+import robotsTxt from "astro-robots-txt";
 import { defineConfig } from "astro/config";
 import { remarkAlert } from "remark-github-blockquote-alert";
 
 export default defineConfig({
-  site: "https://haashemi.dev",
-  integrations: [mdx(), sitemap(), tailwind(), icon()],
+  site: "https://www.haashemi.dev",
+
+  devToolbar: { enabled: false },
+
+  experimental: {
+    contentIntellisense: true,
+  },
+
   markdown: {
     remarkPlugins: [remarkAlert],
   },
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
+
+  integrations: [react(), robotsTxt(), sitemap()],
 });
