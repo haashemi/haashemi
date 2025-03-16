@@ -1,21 +1,35 @@
 ---
+import Section from "@hx/components/Section.astro";
+import { socials } from "@hx/consts";
+import Layout from "@hx/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
-import BlogLink from "@hx/components/BlogLink.astro";
-import ExperienceLink from "@hx/components/ExperienceLink.astro";
-import Section from "@hx/components/Section.astro";
-import TechStacks from "@hx/components/TechStacks.astro";
-import Layout from "@hx/layouts/Layout.astro";
-
 const allBlogs = await getCollection("blog");
-const allExperiences = await getCollection("exp");
 ---
 
 <Layout>
+  <header class="flex items-center justify-between gap-5 px-5 sm:px-12">
+    <a class="flex flex-col gap-2" href="/">
+      <h1 class="text-4xl font-medium">Ali Hashemi</h1>
+      <p class="text-lg text-zinc-400">Golang Developer</p>
+    </a>
+
+    <a class="flex items-center gap-3 border border-zinc-600 px-3 py-2 text-lg text-white hover:bg-zinc-800" href="/cv">
+      Resume
+    </a>
+  </header>
+
   <main class="flex w-full flex-col gap-5">
-    <Section title="Tech Stack">
-      <div class="flex flex-wrap gap-3 px-3">
-        <TechStacks />
+    <Section title="Socials">
+      <div class="flex flex-col gap-2 px-3">
+        {
+          socials.map((social) => (
+            <a class="flex items-center gap-3 text-lg text-zinc-200 hover:underline" href={social.url}>
+              <social.Icon className="h-full text-zinc-500" />
+              <span>{social.value}</span>
+            </a>
+          ))
+        }
       </div>
     </Section>
 
@@ -24,25 +38,19 @@ const allExperiences = await getCollection("exp");
         {
           allBlogs
             .toSorted((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
-            .map((post) => <BlogLink summary={post.data.summary} title={post.data.title} url={post.slug} />)
-        }
-      </div>
-    </Section>
-
-    <Section title="Experiences">
-      <div class="flex flex-col gap-3 px-2">
-        {
-          allExperiences
-            .toSorted((a, b) => b.data.startDate.getTime() - a.data.startDate.getTime())
             .map((post) => (
-              <ExperienceLink
-                endDate={post.data.endDate}
-                startDate={post.data.startDate}
-                title={post.data.title}
-                url={post.slug}
-                company={post.data.company}
-                employmentType={post.data.employmentType}
-              />
+              <a
+                class="group relative flex-1 border-l-2 border-zinc-800 px-4 py-2 hover:border-zinc-500"
+                href={`/blog/${post.slug}`}
+              >
+                <span class="absolute top-0 left-0 size-full bg-gradient-to-r from-zinc-900 to-transparent opacity-0 group-hover:opacity-100" />
+
+                <div class="relative flex flex-col gap-2">
+                  <h2>{post.data.title}</h2>
+
+                  <p class="text-sm text-zinc-500">{post.data.summary}</p>
+                </div>
+              </a>
             ))
         }
       </div>

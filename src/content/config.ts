@@ -11,11 +11,11 @@ const blog = defineCollection({
   }),
 });
 
-const exp = defineCollection({
+const cv = defineCollection({
   type: "content",
   schema: z.object({
-    title: z.enum(["Software Engineer", "Backend Developer", "Frontend Developer", "Full-Stack Developer"]),
-    employmentType: z.enum(["Full-time", "Freelance", "Self-Employed"]),
+    title: z.enum(["", "Software Engineer", "Backend Developer", "Frontend Developer", "Full-Stack Developer"]),
+    employmentType: z.enum(["", "Full-time", "Freelance", "Self-Employed"]),
     company: z.string(),
     startDate: z.coerce.date(),
     endDate: z.coerce.date().optional(),
@@ -23,4 +23,4 @@ const exp = defineCollection({
   }),
 });
 
-export const collections = { blog, exp };
+export const collections = { blog, cv };

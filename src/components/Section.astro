@@ -8,11 +8,10 @@ const { title } = Astro.props;
 
 <div class="flex flex-col gap-5">
   <div
-    class="sticky top-0 z-10 flex w-full items-center gap-2 bg-gradient-to-b from-zinc-950 via-zinc-950 to-transparent py-2"
+    class="flex w-full items-center gap-2 bg-zinc-950 py-2"
   >
-    <span class="h-[1px] w-10 bg-gradient-to-r from-transparent to-zinc-700"></span>
     <h2 class="text-center text-xl font-light text-zinc-500">{title}</h2>
-    <span class="h-[1px] flex-1 bg-gradient-to-l from-transparent to-zinc-700"></span>
+    <span class="h-[1px] flex-1 bg-zinc-700"></span>
   </div>
 
   <slot />

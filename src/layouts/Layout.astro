@@ -1,7 +1,6 @@
 ---
 import "@hx/styles/global.css";
 import Head from "@hx/components/Head.astro";
-import Header from "@hx/components/Header.astro";
 import { AstroFont } from "astro-font";
 ---
 
@@ -9,7 +8,7 @@ import { AstroFont } from "astro-font";
 <html lang="en" class="dark">
   <head>
     <slot name="head">
-      <Head title={`Ali Hashemi`} description={"Ali Hashemi's personal website"} />
+      <Head title="Ali Hashemi" description={"Ali Hashemi's personal website"} />
     </slot>
 
     <AstroFont
@@ -27,17 +26,10 @@ import { AstroFont } from "astro-font";
     />
   </head>
 
-  <body class="relative mx-auto w-full max-w-prose font-sans antialiased dark:bg-zinc-950">
-    <Header />
-
-    <main>
-      <slot />
-    </main>
-
-    <!-- Bottom shadow -->
-    <div class="h-20"></div>
-    <div class="fixed top-0 left-0 h-10 w-full bg-gradient-to-b from-zinc-950 to-transparent"></div>
-    <div class="fixed bottom-0 left-0 h-10 w-full bg-gradient-to-t from-zinc-950 to-transparent"></div>
+  <body
+    class="relative mx-auto my-16 flex w-full max-w-prose flex-col gap-8 px-3 font-sans antialiased dark:bg-zinc-950"
+  >
+    <slot />
   </body>
 </html>
 

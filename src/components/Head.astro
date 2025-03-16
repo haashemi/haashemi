@@ -1,7 +1,6 @@
 ---
-import "remark-github-blockquote-alert/alert.css";
-import { ClientRouter } from "astro:transitions";
 import { SEO } from "astro-seo";
+import "remark-github-blockquote-alert/alert.css";
 
 interface Props {
   title: string;
@@ -16,10 +15,10 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <SEO
-  title={title}
   charset="utf-8"
-  description={description}
+  title={title}
   canonical={canonicalUrl}
+  description={description}
   openGraph={{
     basic: {
       type: "website",
@@ -27,12 +26,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       title,
       image: imageUrl.href,
     },
-  }}
-  twitter={{
-    card: "summary_large_image",
-    title,
-    description,
-    image: imageUrl.href,
   }}
   extend={{
     link: [
@@ -49,7 +42,10 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       { name: "color-scheme", content: "dark" },
     ],
   }}
+  twitter={{
+    card: "summary_large_image",
+    title,
+    description,
+    image: imageUrl.href,
+  }}
 />
-
-<!-- ViewTransitions -->
-<ClientRouter />
