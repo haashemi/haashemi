@@ -1,6 +1,6 @@
 ---
 title: "How to assign a static IP on Raspberry PI?"
-summary: "A short tutorial on how to have a same IP address on your raspberry pi"
+description: "A short tutorial on how to have a same IP address on your raspberry pi"
 pubDate: 2025-01-04
 ---
 

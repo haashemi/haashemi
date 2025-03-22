@@ -1,9 +1,5 @@
 ---
-title: ""
-employmentType: ""
-company: "Resume"
-startDate: "2021-01-01"
-# endDate: 
+title: "Resume"
 ---
 
 # Backend Developer (Go)

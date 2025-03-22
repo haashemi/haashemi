@@ -1,23 +1,9 @@
-import { init } from "@fullstacksjs/eslint-config";
-import eslintPluginAstro from "eslint-plugin-astro";
-import { defineConfig, globalIgnores } from "eslint/config";
+import { defineConfig } from "@fullstacksjs/eslint-config";
 
-export default defineConfig([
-  ...eslintPluginAstro.configs.base,
-  ...init({
-    react: false, // It thinks that .astro files are react files. so let's just disable it.
-    tailwind: false, // At the moment it doesn't support tailwind v4.
-  }),
-  globalIgnores([".astro"]),
-  {
-    rules: {
-      // We'll wait for @fullstacksjs' astro support
-      "import/no-unresolved": [
-        "error",
-        {
-          ignore: ["^astro:.*"],
-        },
-      ],
-    },
+export default defineConfig({
+  tailwind: false, // Temporarily disabled until v4 support
+  rules: {
+    // I just don't get it...
+    "@typescript-eslint/restrict-template-expressions": "off",
   },
-]);
+});

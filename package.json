@@ -1,43 +1,34 @@
 {
   "name": "haashemi",
-  "type": "module",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@astrojs/react": "4.2.1",
-    "@astrojs/sitemap": "3.2.1",
-    "astro": "5.5.2",
-    "astro-font": "1.0.0",
-    "astro-robots-txt": "1.0.0",
-    "astro-seo": "0.8.4",
+    "next": "15.2.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-icons": "5.5.0",
     "remark-github-blockquote-alert": "1.3.0"
   },
   "devDependencies": {
-    "@fullstacksjs/eslint-config": "11.7.1",
+    "@content-collections/core": "0.8.2",
+    "@content-collections/markdown": "0.1.4",
+    "@content-collections/next": "0.2.6",
+    "@fullstacksjs/eslint-config": "11.9.0",
+    "@tailwindcss/postcss": "4.0.15",
     "@tailwindcss/typography": "0.5.16",
-    "@tailwindcss/vite": "4.0.14",
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4",
-    "eslint": "9.22.0",
-    "eslint-plugin-astro": "1.3.1",
+    "@types/node": "22.13.11",
+    "@types/react": "19",
+    "@types/react-dom": "19",
+    "eslint": "9.23.0",
     "prettier": "3.5.3",
-    "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.6.11",
-    "tailwindcss": "4.0.14",
+    "tailwindcss": "4.0.15",
     "typescript": "5.7.3"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp"
-    ]
   }
 }

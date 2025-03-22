@@ -1,6 +1,6 @@
 ---
 title: "My Windows setup"
-summary: "How do I setup my Windows environment"
+description: "How do I setup my Windows environment"
 pubDate: 2024-11-24
 ---
 
