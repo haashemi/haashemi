@@ -34,7 +34,7 @@ nmcli dev status
 
 It will give a result like this:
 
-```
+```bash
 DEVICE         TYPE      STATE                   CONNECTION
 wlan0          wifi      connected               preconfigured
 lo             loopback  connected (externally)  lo
