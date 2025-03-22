@@ -29,76 +29,76 @@ Here are some examples of the images that LlamaNite was able to generate using t
 
 Data source: [fortnite-api.com](https://fortnite-api.com)
 
-![Battle Royale ItemShop](/cv/llamanite/1-br-itemshop.png)
+![Battle Royale ItemShop](/images/cv/llamanite/1-br-itemshop.png)
 
 ### Battle Royale: ItemShop Sections
 
 Data source: FN-API
 
-![Battle Royale ItemShop Sections](/cv/llamanite/2-br-itemshop-sections.jpg)
+![Battle Royale ItemShop Sections](/images/cv/llamanite/2-br-itemshop-sections.jpg)
 
 ### Battle Royale: News Page
 
 Data source: [fortnite-api.com](https://fortnite-api.com)
 
-![Battle Royale News Page](/cv/llamanite/3-br-news.jpg)
+![Battle Royale News Page](/images/cv/llamanite/3-br-news.jpg)
 
 ### Battle Royale: New Cosmetics
 
 Data source: [fortnite-api.com](https://fortnite-api.com)
 
-![Battle Royale New Cosmetics](/cv/llamanite/4-br-new-cosmetics.jpg)
+![Battle Royale New Cosmetics](/images/cv/llamanite/4-br-new-cosmetics.jpg)
 
 ### Battle Royale: Player Stats
 
 Data source: [fortnite-api.com](https://fortnite-api.com)
 
-![Battle Royale Player Stats](/cv/llamanite/5-br-stats.jpg)
+![Battle Royale Player Stats](/images/cv/llamanite/5-br-stats.jpg)
 
 ### Save the World: V-Bucks Missions
 
 Data source: [freethevbucks.com](https://freethevbucks.com)
 
-![Save the World V-Bucks Missions](/cv/llamanite/6-stw-v-bucks-missions.jpg)
+![Save the World V-Bucks Missions](/images/cv/llamanite/6-stw-v-bucks-missions.jpg)
 
 ### Save the World: Mission Alerts
 
 Data source: [freethevbucks.com](https://freethevbucks.com)
 
-![Save the World Mission Alerts](/cv/llamanite/7-stw-missions.jpg)
+![Save the World Mission Alerts](/images/cv/llamanite/7-stw-missions.jpg)
 
 ### Save the World: LlamaShop
 
 Data source: [freethevbucks.com](https://freethevbucks.com)
 
-![Save the World LlamaShop](/cv/llamanite/8-stw-llamashop.jpg)
+![Save the World LlamaShop](/images/cv/llamanite/8-stw-llamashop.jpg)
 
 ### Save the World: X-Ray Llama
 
 Data source: [freethevbucks.com](https://freethevbucks.com)
 
-![Save the World X-Ray Llama](/cv/llamanite/9-stw-x-ray-llama.jpg)
+![Save the World X-Ray Llama](/images/cv/llamanite/9-stw-x-ray-llama.jpg)
 
 ### Save the World: News Page
 
 Data source: [fortnite-api.com](https://fortnite-api.com)
 
-![Save the World News Page](/cv/llamanite/10-stw-news.jpg)
+![Save the World News Page](/images/cv/llamanite/10-stw-news.jpg)
 
 ### Save the World: Player Stats
 
 Data source: Official API
 
-![Save the World Player Stats](/cv/llamanite/11-stw-stats.jpg)
+![Save the World Player Stats](/images/cv/llamanite/11-stw-stats.jpg)
 
 ### Misc: Light Switch
 
 Data source: FN-API
 
-![Misc Light Switch](/cv/llamanite/12-misc-lightswitch.jpg)
+![Misc Light Switch](/images/cv/llamanite/12-misc-lightswitch.jpg)
 
 ### Misc: Select Game Mode
 
 Data source: Official API
 
-![Misc Select Game Mode](/cv/llamanite/13-misc-select-game-mode.jpg)
+![Misc Select Game Mode](/images/cv/llamanite/13-misc-select-game-mode.jpg)
