@@ -3,7 +3,8 @@
 I'm Ali Hashemi, a Golang developer who also does front-end as hobby and also
 focuses on writing simple and performant codes.
 
-CV: [haashemi.dev/cv](https://haashemi.dev/cv)
+OPN: [opn.bio/@haashemi](https://opn.bio/@haashemi)
+WEB: [haashemi.dev](https://haashemi.dev)
 
 ## 🔧 Current Tech Stack:
 
