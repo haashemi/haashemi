@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "import": [],
+  "language": "en",
+  "dictionaryDefinitions": [
+    {
+      "name": "cspell-words",
+      "path": "./cspell-words.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": ["cspell-words"],
+  "ignorePaths": ["node_modules", "pnpm-lock.yaml", "*.svg", "/cspell-words.txt"],
+  "enabled": true
+}

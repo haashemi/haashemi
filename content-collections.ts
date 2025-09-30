@@ -1,17 +1,12 @@
-import type { Context } from "@content-collections/core";
-import type { Pluggable } from "unified";
-
 import { defineCollection, defineConfig } from "@content-collections/core";
 import { compileMarkdown } from "@content-collections/markdown";
 import rehypeShiki from "@shikijs/rehype";
 import remarkGfm from "remark-gfm";
 import { remarkAlert } from "remark-github-blockquote-alert";
 import remarkSmartypants from "remark-smartypants";
+import z from "zod";
 
-interface TransformOptions {
-  remarkPlugins: Pluggable[];
-  rehypePlugins: Pluggable[];
-}
+type TransformOptions = Parameters<typeof compileMarkdown>[2];
 
 const transformOptions: TransformOptions = {
   remarkPlugins: [remarkGfm, remarkSmartypants, remarkAlert],
@@ -22,7 +17,7 @@ const blogs = defineCollection({
   name: "blogs",
   directory: "content/blogs",
   include: "**/*.md",
-  schema: (z) => ({
+  schema: z.object({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
@@ -39,7 +34,7 @@ const cv = defineCollection({
   name: "cv",
   directory: "content/cv",
   include: "**/*.md",
-  schema: (z) => ({
+  schema: z.object({
     title: z.enum(["", "Software Engineer", "Backend Developer", "Frontend Developer", "Full-Stack Developer"]),
     employmentType: z.enum(["", "Full-time", "Freelance", "Self-Employed"]),
     company: z.string(),
@@ -57,7 +52,7 @@ const pages = defineCollection({
   name: "pages",
   directory: "content/pages",
   include: "**/*.md",
-  schema: (z) => ({ title: z.string() }),
+  schema: z.object({ title: z.string() }),
   transform: async (document, context) => ({
     ...document,
     html: await compileMarkdown(context, document, transformOptions),

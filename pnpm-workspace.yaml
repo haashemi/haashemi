@@ -1,0 +1,14 @@
+engineStrict: true
+
+onlyBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - esbuild
+  - sharp
+  - simple-git-hooks
+  - unrs-resolver
+
+packageManagerStrictVersion: true
+
+savePrefix: ''
+
+strictPeerDependencies: true
