@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import Section from "@/components/Section";
-import { socials } from "@/config/constants";
+import { site } from "@/config/site";
 import { allBlogs } from "@/content";
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export default function Home() {
       <main className="flex w-full flex-col gap-5">
         <Section title="Socials">
           <div className="flex flex-col gap-2 px-3">
-            {socials.map((social) => (
+            {site.socials.map((social) => (
               <a
                 className="flex items-center gap-3 text-lg text-zinc-200 hover:underline"
                 href={social.url}

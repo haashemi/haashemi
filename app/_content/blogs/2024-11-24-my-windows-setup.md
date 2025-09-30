@@ -76,7 +76,6 @@ To be able to begin the setup process instantly after the installation, prepare 
 Now that our USB drive is ready for the installation, we should take a backup from our current installation. Here is a list of files and folders that I usually look for. (they might be different for you.)
 
 - Files
-
   - .gitconfig: `%UserProfile%\.gitconfig`
   - scoop data: `scoop export > scoop.json`
   - scoop config: `%UserProfile%\.config\scoop`
@@ -85,7 +84,6 @@ Now that our USB drive is ready for the installation, we should take a backup fr
   - vpn configurations: `export them manually`
 
 - Folders
-
   - .ssh: `%UserProfile%\.ssh`
   - Fonts: `C:\Windows\Fonts`
   - Projects: `%UserProfile%\Documents\GitHub`

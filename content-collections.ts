@@ -15,7 +15,7 @@ const transformOptions: TransformOptions = {
 
 const blogs = defineCollection({
   name: "blogs",
-  directory: "content/blogs",
+  directory: "app/_content/blogs",
   include: "**/*.md",
   schema: z.object({
     title: z.string(),
@@ -32,7 +32,7 @@ const blogs = defineCollection({
 
 const cv = defineCollection({
   name: "cv",
-  directory: "content/cv",
+  directory: "app/_content/cv",
   include: "**/*.md",
   schema: z.object({
     title: z.enum(["", "Software Engineer", "Backend Developer", "Frontend Developer", "Full-Stack Developer"]),
@@ -50,7 +50,7 @@ const cv = defineCollection({
 
 const pages = defineCollection({
   name: "pages",
-  directory: "content/pages",
+  directory: "app/_content/pages",
   include: "**/*.md",
   schema: z.object({ title: z.string() }),
   transform: async (document, context) => ({

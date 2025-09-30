@@ -1,5 +1,5 @@
-import { TELEGRAM_CHANNEL } from "@/config/constants";
+import { site } from "@/config/site";
 
 export function GET() {
-  return Response.redirect(TELEGRAM_CHANNEL, 307);
+  return Response.redirect(site.urls.telegram, 307);
 }

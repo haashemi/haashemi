@@ -16,9 +16,9 @@
     "plugins": [{ "name": "next" }],
 
     "paths": {
-      "@/components/*": ["./components/*"],
+      "@/components/*": ["./app/_components/*"],
       "@/content": ["./.content-collections/generated"],
-      "@/config/*": ["./config/*"]
+      "@/config/*": ["./app/_config/*"]
     }
   },
   "include": ["**/*", "next-env.d.ts", ".next/types/**/*.ts", ".contentlayer/generated"],

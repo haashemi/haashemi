@@ -18,7 +18,7 @@ security-critical microservices and services. Developed successful backends with
 ### [Freelance - Software Engineer](/cv/freelance)
 
 _June 2024 - Present_\
-Tech Stack: `Go`, `Typescript`, `Python`, `PostgreSQL`, `Minio`, `Docker`, `Logto`, `Echo`, `Iris`, `SQLC`, `PGX`, `Next.js`, `AntD`, `TailwindCSS`, 
+Tech Stack: `Go`, `Typescript`, `Python`, `PostgreSQL`, `Minio`, `Docker`, `Logto`, `Echo`, `Iris`, `SQLC`, `PGX`, `Next.js`, `AntD`, `TailwindCSS`,
 
 ### [Epic Center - Full-Stack Developer](/cv/epic-center)
 
@@ -42,7 +42,7 @@ Tech Stack: `Go`, `Iris`, `Ent`, `SQLite`, `PostgreSQL`
 - Implemented an open-source Telegram Bot framework from scratch in Go to fulfill the project requirements.
 - Generated custom images for each 15+ subscribers within 10 seconds of each Fortnite's news concurrently.
 - Reduced image re-renders by 90% by implementing a dynamic cache system for images' file IDs.
-- Reduced the memory usage of user-cusotmized image generations up to 50% by caching the main layer. 
+- Reduced the memory usage of user-customized image generations up to 50% by caching the main layer.
 - Improved image generation performance up to 70% by generating the sub-layers concurrently on the main layer.
 
 ## Projects
