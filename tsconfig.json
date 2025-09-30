@@ -16,11 +16,11 @@
     "plugins": [{ "name": "next" }],
 
     "paths": {
-      "@hx/components/*": ["./app/_components/*"],
-      "@hx/content": ["./.content-collections/generated"],
-      "@hx/lib/*": ["./app/_lib/*"]
+      "@/components/*": ["./components/*"],
+      "@/content": ["./.content-collections/generated"],
+      "@/config/*": ["./config/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".contentlayer/generated"],
+  "include": ["**/*", "next-env.d.ts", ".next/types/**/*.ts", ".contentlayer/generated"],
   "exclude": ["node_modules"]
 }

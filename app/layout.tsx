@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 
-import { SITE } from "@hx/lib/constants";
 import { Geist, Geist_Mono } from "next/font/google";
+
+import { SITE } from "@/config/constants";
 
 import "./globals.css";
 

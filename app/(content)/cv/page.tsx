@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { allPages } from "@hx/content";
+import { allPages } from "@/content";
 
 export const metadata: Metadata = {
   title: "Resume | Ali Hashemi",

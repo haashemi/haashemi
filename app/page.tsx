@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
-import Section from "@hx/components/Section";
-import { allBlogs } from "@hx/content";
-import { socials } from "@hx/lib/constants";
 import Link from "next/link";
+
+import Section from "@/components/Section";
+import { socials } from "@/config/constants";
+import { allBlogs } from "@/content";
 
 export const metadata: Metadata = {
   title: "Ali Hashemi",

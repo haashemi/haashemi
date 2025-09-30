@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { allBlogs } from "@hx/content";
+import { allBlogs } from "@/content";
 
 export function generateStaticParams() {
   return allBlogs.map((post) => ({

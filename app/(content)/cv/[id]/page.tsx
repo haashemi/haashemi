@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { allCvs } from "@hx/content";
+import { allCvs } from "@/content";
 
 export function generateStaticParams() {
   return allCvs.map((cv) => ({
