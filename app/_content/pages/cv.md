@@ -4,54 +4,54 @@ title: "Resume"
 
 # Backend Developer (Go)
 
-Golang Developer with +4 years of experience as a freelance developer. Highly skilled in developing and maintaining
-high-performance REST APIs by following the industry standards. Passionate about developing internal, single-purpose,
-security-critical microservices and services. Developed successful backends with +2K active users.
+Golang Developer with +5 years of experience as a freelance developer. Highly skilled in developing and maintaining high-performance REST APIs by following the industry standards. Passionate about developing internal, single-purpose, security-critical microservices and services. Successfully developed backends with +2K active users.
 
 ## Skills
 
-- Languages & Frameworks: `Go`, `JS/TS`, `Gin`, `Iris`, `React`, `React Native`, `Next.JS`, `Svelte/Kit`
-- Technologies: `PostgreSQL`, `Badger`, `Redis`, `Rest API`, `gRPC`, `Git`, `Docker`, `Nginx`, `Sentry`, `OpenTelemetry`
+- Languages & Frameworks: `Go`, `JS/TS`, `Gin`, `Echo`, `Iris`, `React`, `React Native`, `Next.JS`
+- Technologies: `PostgreSQL`, `MySQL`, `MariaDB`, `Badger`, `Redis`, `Valkey`, `gRPC`, `Git`, `Docker (compose)`, `Nginx`, `Caddy`, `Sentry`, `OpenTelemetry`
 
 ## Experiences
 
-### [Freelance - Software Engineer](/cv/freelance)
+### [Rabits Studio - Back end Developer](https://rabits.dev/en)
 
 _June 2024 - Present_\
-Tech Stack: `Go`, `Typescript`, `Python`, `PostgreSQL`, `Minio`, `Docker`, `Logto`, `Echo`, `Iris`, `SQLC`, `PGX`, `Next.js`, `AntD`, `TailwindCSS`,
+Tech Stack: `Golang`, `Javascript / Typescript`, `Echo`, `Hono`, `gRPC`, `GraphQL`, `PostgreSQL`, `MinIO`, `Valkey`, `Docker (compose)`, `SQLC`, `AWS`
 
-### [Epic Center - Full-Stack Developer](/cv/epic-center)
+**Key Accomplishments**
 
-_Aug 2022 - Jan 2024 (1 year and 6 months)_\
-Tech Stack: `Go`, `JS/TS`, `Gin`, `PostgreSQL`, `Badger`, `Next.JS`, `OpenTelemetry`
+- Implemented migration scripts to incrementally migrate and normalize data from third-party APIs to the company's AWS Aurora and S3 storage.
+- Managed and configured multi-environment setup on Vercel infrastructure in order to create different database branches for each deployment stage. Resulted in improved application reliability.
+- Fully documented the API using OpenAPI standards.
+
+### [Epic Center - Software Engineer](https://epic-center.ir)
+
+_Aug 2022 - Present_\
+Tech Stack: `Golang`, `Javascript / Typescript`, `Gin`, `Echo`, `PostgreSQL`, `MySQL`, `MariaDB`, `MinIO`, `Badger`, `Redis`, `OpenTelemetry`
 
 **Key Accomplishments**
 
 - Automated delivery of 70% of daily orders by designing and implementing an internal microservice to manage the orders.
 - Implemented an e-wallet system using the users' transaction history.
-- Improved the database's performance by indexing essential tables' columns.
+- Improved the database's performance up to 10x by indexing essential tables' columns and optimizing the queries.
 - Detect and fix bottlenecks by measuring latency and error rate using OpenTelemetry. Resulted in improving service performance and reliability.
+- Migrated the backend from PHP (Laravel) to Go, resulting in increased stability and performance while reducing the hosting costs by half.
+- Directly stayed in touch with the team's frontend developers to find the requirements and possible improvements defined by their point of view, which enhanced the end-user experience.
+- Reimplemented authentication system to use server-manager JWT tokens over client-side-managed sessions, which increased general security.
 
 ### [LlamaNite - Back End Developer](/cv/llamanite)
 
-_Jan 2021 - Aug 2022 (1 year and 8 months)_\
+_Feb 2020 - Aug 2022 (2 years and 7 months)_\
 Tech Stack: `Go`, `Iris`, `Ent`, `SQLite`, `PostgreSQL`
 
 **Key Accomplishments**
 
 - Implemented an open-source Telegram Bot framework from scratch in Go to fulfill the project requirements.
-- Generated custom images for each 15+ subscribers within 10 seconds of each Fortnite's news concurrently.
-- Reduced image re-renders by 90% by implementing a dynamic cache system for images' file IDs.
+- Implemented two open-source image editing packages `painter` and `writer` to leverage Go's concurrency while leveraging libraries like Harfbuzz using CGO.
 - Reduced the memory usage of user-customized image generations up to 50% by caching the main layer.
-- Improved image generation performance up to 70% by generating the sub-layers concurrently on the main layer.
-
-## Projects
-
-### TGO ([GitHub](https://github.com/haashemi/tgo))
-
-A Telegram bot framework on top of Telegram's bot API. Code generates the raw API methods from the official documents and provides essential features to ease bot development, like some raw method wrappers, the ask method, in-memory user session storage, and most importantly, routers!
+- Improved image generation performance by up to 70% by generating the sub-layers concurrently on the main layer.
 
 ## Languages
 
-- English (Conversational)
+- English (Fluent)
 - Persian (Native)

@@ -13,12 +13,15 @@ fullstacksjs
 gitmessage
 googlechrome
 haashemi
+harfbuzz
 hashemi
+laravel
 Logto
 massgrave
 Neko
 nmcli
 preconfigured
+rabits
 Redist
 Royale
 shiki
@@ -27,6 +30,7 @@ SQLC
 tokei
 turbopack
 unrs
+valkey
 Ventoy
 windirstat
 winrar
