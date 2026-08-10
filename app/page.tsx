@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 
-import Link from "next/link";
-
-import Section from "@/components/Section";
 import { site } from "@/config/site";
-import { allBlogs } from "@/content";
+import { allBlogPosts } from "@/content";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Ali Hashemi",
@@ -13,58 +11,83 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
-      <header className="flex items-center justify-between gap-5 px-5 sm:px-12">
-        <Link className="flex flex-col gap-2" href="/">
-          <h1 className="text-4xl font-medium">Ali Hashemi</h1>
-          <p className="text-lg text-zinc-400">Golang Developer</p>
-        </Link>
+    <main className="flex-1 *:p-4 *:not-last:border-b">
+      <section className="px-6! py-8!">
+        <p className="text-sm text-pretty text-muted-foreground">
+          A <i>Software Developer</i> who is interested in developing things that no one usually expects.
+        </p>
+      </section>
 
-        <Link
-          className="flex items-center gap-3 border border-zinc-600 px-3 py-2 text-lg text-white hover:bg-zinc-800"
-          href="/cv"
-        >
-          Resume
-        </Link>
-      </header>
+      <section className="space-y-4">
+        <h2 className="flex items-center gap-2">
+          <div className="size-1 bg-muted-foreground" /> Working On:
+        </h2>
 
-      <main className="flex w-full flex-col gap-5">
-        <Section title="Socials">
-          <div className="flex flex-col gap-2 px-3">
-            {site.socials.map((social) => (
-              <a
-                className="flex items-center gap-3 text-lg text-zinc-200 hover:underline"
-                href={social.url}
-                key={social.url}
-              >
-                <social.Icon className="h-full text-zinc-500" />
-                <span>{social.value}</span>
+        <ul className="flex list-disc flex-col gap-2 px-2 text-sm text-muted-foreground">
+          {site.clients.map((v) => (
+            <li key={v.title} className="flex items-center gap-2">
+              <div className="size-1 bg-muted-foreground" />
+              <span>{v.title}</span>
+              <span className="flex-1 border-t border-dashed" />
+              <a href={v.url.href} className="hover:text-foreground hover:underline">
+                {v.url.title}
               </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="flex items-center gap-2">
+          <div className="size-1 bg-muted-foreground" /> Projects:
+        </h2>
+
+        <ul className="flex list-disc flex-col gap-2 px-2 text-sm text-muted-foreground">
+          {site.projects.map((v) => (
+            <li key={v.title} className="flex items-center gap-2">
+              <div
+                className={cn(
+                  "size-1",
+                  v.state === "active"
+                    ? "bg-green-500"
+                    : v.state === "on-hold"
+                      ? "bg-yellow-500"
+                      : v.state === "stopped"
+                        ? "bg-red-500"
+                        : "bg-muted",
+                )}
+              />
+              <span>{v.title}</span>
+              <span className="flex-1 border-t border-dashed" />
+              <a href={v.url.href} className="hover:text-foreground hover:underline">
+                {v.url.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="flex items-center gap-2">
+          <div className="size-1 bg-muted-foreground" /> Blog Posts:
+        </h2>
+
+        <ul className="flex list-disc flex-col gap-2 px-2 text-sm text-muted-foreground">
+          {allBlogPosts
+            //@ts-ignore Date is number.
+            .toSorted((a, b) => b.pubDate - a.pubDate)
+            .map((v) => (
+              <li key={v.title} className="flex items-center gap-2">
+                <div className="aspect-square size-1 bg-muted-foreground" />
+                <span>{v.title}</span>
+                <span className="flex-1 border-t border-dashed" />
+                <a href={`/post/${v._meta.path}`} className="text-nowrap hover:text-foreground hover:underline">
+                  Read More
+                </a>
+              </li>
             ))}
-          </div>
-        </Section>
-
-        <Section title="Blogs">
-          <div className="flex flex-col gap-3 px-2">
-            {allBlogs
-              .toSorted((a, b) => b.pubDate.getTime() - a.pubDate.getTime())
-              .map((post) => (
-                <Link
-                  className="group relative flex-1 border-l-2 border-zinc-800 px-4 py-2 hover:border-zinc-500"
-                  href={`/blog/${post._meta.path}`}
-                  key={post._meta.path}
-                >
-                  <span className="absolute top-0 left-0 size-full bg-gradient-to-r from-zinc-900 to-transparent opacity-0 group-hover:opacity-100" />
-
-                  <div className="relative flex flex-col gap-2">
-                    <h2>{post.title}</h2>
-                    <p className="text-sm text-zinc-500">{post.description}</p>
-                  </div>
-                </Link>
-              ))}
-          </div>
-        </Section>
-      </main>
-    </>
+        </ul>
+      </section>
+    </main>
   );
 }

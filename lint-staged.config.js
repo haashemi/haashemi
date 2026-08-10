@@ -3,7 +3,6 @@
  * @type {import('lint-staged').Configuration}
  */
 export default {
-  "*": "cspell",
-  "*.{js,mjs,ts}": "eslint --fix",
+  "*.{js,jsx,mjs,ts,tsx}": "eslint --fix",
   "*.{md,json}": "prettier --write",
 };

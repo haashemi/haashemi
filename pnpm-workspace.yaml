@@ -1,14 +1,13 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+  simple-git-hooks: true
+  unrs-resolver: true
+
 engineStrict: true
 
-onlyBuiltDependencies:
-  - '@tailwindcss/oxide'
-  - esbuild
-  - sharp
-  - simple-git-hooks
-  - unrs-resolver
+nodeLinker: hoisted
 
 packageManagerStrictVersion: true
 
-savePrefix: ''
-
-strictPeerDependencies: true
+savePrefix: ""

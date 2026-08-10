@@ -13,9 +13,9 @@ const transformOptions: TransformOptions = {
   rehypePlugins: [[rehypeShiki, { theme: "github-dark" }]],
 };
 
-const blogs = defineCollection({
-  name: "blogs",
-  directory: "app/_content/blogs",
+const blogPosts = defineCollection({
+  name: "blogPosts",
+  directory: "content/posts",
   include: "**/*.md",
   schema: z.object({
     title: z.string(),
@@ -23,36 +23,8 @@ const blogs = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
+    content: z.string(),
   }),
-  transform: async (document, context) => ({
-    ...document,
-    html: await compileMarkdown(context, document, transformOptions),
-  }),
-});
-
-const cv = defineCollection({
-  name: "cv",
-  directory: "app/_content/cv",
-  include: "**/*.md",
-  schema: z.object({
-    title: z.enum(["", "Software Engineer", "Backend Developer", "Frontend Developer", "Full-Stack Developer"]),
-    employmentType: z.enum(["", "Full-time", "Freelance", "Self-Employed"]),
-    company: z.string(),
-    startDate: z.coerce.date(),
-    endDate: z.coerce.date().optional(),
-    mainPath: z.string().optional(),
-  }),
-  transform: async (document, context) => ({
-    ...document,
-    html: await compileMarkdown(context, document, transformOptions),
-  }),
-});
-
-const pages = defineCollection({
-  name: "pages",
-  directory: "app/_content/pages",
-  include: "**/*.md",
-  schema: z.object({ title: z.string() }),
   transform: async (document, context) => ({
     ...document,
     html: await compileMarkdown(context, document, transformOptions),
@@ -60,5 +32,5 @@ const pages = defineCollection({
 });
 
 export default defineConfig({
-  collections: [blogs, cv, pages],
+  content: [blogPosts],
 });

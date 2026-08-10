@@ -15,7 +15,7 @@ So, in this post, I'm going to tell about every app, tool, and script that I use
 This blog post is not intended as a _tutorial_ but a walkthrough on my Windows setup. I also expect you to have some common knowledge, too.
 
 > [!NOTE]
-> This blog post may be updated regularly, so expect changes every few months or so. I'll tell the changes in [my Telegram channel](/urls/telegram-channel)
+> This blog post may be updated regularly, so expect changes every few months or so. I'll tell the changes in [my Telegram channel](/urls/telegram)
 
 > [!CAUTION]
 > Please do your own research before using any apps, scripts, or commands of this post from different perspectives (security, legally, and what they even do). I'm not responsible for any possible issues.
