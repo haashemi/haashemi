@@ -36,6 +36,10 @@ export const site = {
       title: "Epic-Center",
       url: { title: "epic-center.ir", href: "https://epic-center.ir" },
     },
+    {
+      title: "Revine",
+      url: { title: "revine.ir", href: "https://revine.ir" },
+    },
   ],
 
   projects: [
