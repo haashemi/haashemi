@@ -1,0 +1,20 @@
+---
+import Icon from "@/components/icon.astro";
+import { site } from "@/config/site";
+---
+
+<header class="sticky top-0 z-10 flex h-14 items-center justify-between gap-4 border-b bg-background px-6">
+  <a href="/" class="text-lg">Ali Hashemi</a>
+
+  <ul class="mt-1 flex gap-4">
+    {
+      site.socials.map((social) => (
+        <li class="h-fit text-muted-foreground transition-colors hover:text-foreground">
+          <a aria-label={social.value} href={social.url}>
+            <Icon name={social.icon} class="size-4" />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</header>

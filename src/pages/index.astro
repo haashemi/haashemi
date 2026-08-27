@@ -1,0 +1,90 @@
+---
+import { getCollection } from "astro:content";
+
+import { site } from "@/config/site";
+import BaseLayout from "@/layouts/base.astro";
+import { cn } from "@/lib/utils";
+
+const posts = (await getCollection("blogPosts")).toSorted(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const stateColors: Record<string, string> = {
+  active: "bg-green-500",
+  "on-hold": "bg-yellow-500",
+  stopped: "bg-red-500",
+};
+---
+
+<BaseLayout>
+  <main class="flex-1 *:p-4 *:not-last:border-b">
+    <section class="px-6! py-8!">
+      <p class="text-sm text-pretty text-muted-foreground">
+        A <i>Software Developer</i> who is interested in developing things that no one usually expects.
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="flex items-center gap-2">
+        <div class="size-1 bg-muted-foreground"></div> Working On:
+      </h2>
+
+      <ul class="flex list-disc flex-col gap-2 px-2 text-sm text-muted-foreground">
+        {
+          site.clients.map((client) => (
+            <li class="flex items-center gap-2">
+              <div class="size-1 bg-muted-foreground" />
+              <span>{client.title}</span>
+              <span class="flex-1 border-t border-dashed" />
+              <a href={client.url.href} class="hover:text-foreground hover:underline">
+                {client.url.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="flex items-center gap-2">
+        <div class="size-1 bg-muted-foreground"></div> Projects:
+      </h2>
+
+      <ul class="flex list-disc flex-col gap-2 px-2 text-sm text-muted-foreground">
+        {
+          site.projects.map((project) => (
+            <li class="flex items-center gap-2">
+              <div class={cn("size-1", stateColors[project.state] ?? "bg-muted")} />
+              <span>{project.title}</span>
+              <span class="flex-1 border-t border-dashed" />
+              <a href={project.url.href} class="hover:text-foreground hover:underline">
+                {project.url.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="flex items-center gap-2">
+        <div class="size-1 bg-muted-foreground"></div> Blog Posts:
+      </h2>
+
+      <ul class="flex list-disc flex-col gap-2 px-2 text-sm text-muted-foreground">
+        {
+          posts.map((post) => (
+            <li class="flex items-center gap-2">
+              <div class="aspect-square size-1 bg-muted-foreground" />
+              <span>{post.data.title}</span>
+              <span class="flex-1 border-t border-dashed" />
+              <a href={`/post/${post.id}/`} class="text-nowrap hover:text-foreground hover:underline">
+                Read More
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+</BaseLayout>

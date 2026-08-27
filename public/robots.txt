@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://haashemi.dev/sitemap-index.xml
+Host: https://haashemi.dev

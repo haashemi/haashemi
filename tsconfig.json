@@ -1,24 +1,9 @@
 {
-  "extends": ["@rabits/tsconfig/react"],
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "target": "ES2017",
-    "plugins": [{ "name": "next" }],
-
-    "paths": {
-      "@/components/*": ["./components/*"],
-      "@/config/*": ["./config/*"],
-      "@/content": ["./.content-collections/generated"],
-      "@/lib/*": ["./lib/*"],
-      "@/styles/*": ["./styles/*"]
-    }
+    "plugins": [{ "name": "@astrojs/ts-plugin" }],
+    "paths": { "@/*": ["./src/*"] }
   },
-  "include": [
-    ".contentlayer/generated",
-    ".next/dev/types/**/*.ts",
-    ".next/types/**/*.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "next-env.d.ts"
-  ],
-  "exclude": ["node_modules"]
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist", "node_modules"]
 }

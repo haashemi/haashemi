@@ -1,0 +1,46 @@
+---
+import { Font } from "astro:assets";
+
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import { site } from "@/config/site";
+import "@/styles/globals.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = site.title, description = site.description } = Astro.props;
+
+const ogImage = `${site.url}/open-graph.jpg`;
+---
+
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#09090b" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <Font cssVariable="--font-space-mono" preload />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={site.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:image" content={ogImage} />
+  </head>
+  <body>
+    <div class="mx-auto flex min-h-svh w-full max-w-prose flex-col sm:border-x">
+      <Header />
+      <slot />
+      <Footer />
+    </div>
+  </body>
+</html>

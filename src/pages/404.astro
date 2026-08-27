@@ -1,0 +1,12 @@
+---
+import { site } from "@/config/site";
+import BaseLayout from "@/layouts/base.astro";
+---
+
+<BaseLayout title={`404 | ${site.title}`} description="Page not found.">
+  <main class="flex flex-1 flex-col items-center justify-center gap-2 p-8 text-sm text-muted-foreground">
+    <p class="text-4xl font-bold text-foreground">404</p>
+    <p>Page not found.</p>
+    <a href="/" class="hover:text-foreground hover:underline">Go home</a>
+  </main>
+</BaseLayout>

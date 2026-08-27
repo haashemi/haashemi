@@ -1,6 +1,3 @@
-import { FaGithub, FaTelegram } from "react-icons/fa6";
-import { SiGo, SiTypescript } from "react-icons/si";
-
 const urls: Record<string, string> = {
   telegram: "https://t.me/HaashemiDev",
 };
@@ -18,13 +15,13 @@ export const site = {
   urls,
 
   socials: [
-    { Icon: FaGithub, value: "haashemi", url: "https://github.com/haashemi" },
-    { Icon: FaTelegram, value: "Byfron", url: "https://t.me/Byfron" },
+    { icon: "github", value: "haashemi", url: "https://github.com/haashemi" },
+    { icon: "telegram", value: "Byfron", url: "https://t.me/Byfron" },
   ],
 
   techStack: [
-    { title: "Go", Icon: SiGo },
-    { title: "TypeScript", Icon: SiTypescript },
+    { title: "Go", icon: "go" },
+    { title: "TypeScript", icon: "typescript" },
   ],
 
   clients: [
