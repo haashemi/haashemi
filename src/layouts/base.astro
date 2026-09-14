@@ -1,5 +1,6 @@
 ---
 import { Font } from "astro:assets";
+import { ClientRouter } from "astro:transitions";
 
 import Footer from "@/components/footer.astro";
 import Header from "@/components/header.astro";
@@ -35,6 +36,8 @@ const ogImage = `${site.url}/open-graph.jpg`;
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:image" content={ogImage} />
+
+    <ClientRouter />
   </head>
   <body>
     <div class="mx-auto flex min-h-svh w-full max-w-prose flex-col sm:border-x">

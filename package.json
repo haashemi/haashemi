@@ -16,32 +16,32 @@
     "prepare": "simple-git-hooks && git config --local commit.template '.gitmessage'"
   },
   "dependencies": {
-    "cnfast": "0.1.0"
+    "cnfast": "0.2.0"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.10",
-    "@astrojs/markdown-satteri": "0.3.7",
+    "@astrojs/markdown-satteri": "0.4.1",
     "@astrojs/rss": "4.0.19",
-    "@astrojs/sitemap": "3.7.3",
+    "@astrojs/sitemap": "3.7.4",
     "@astrojs/ts-plugin": "1.10.11",
-    "@commitlint/cli": "21.2.1",
-    "@commitlint/config-conventional": "21.2.0",
+    "@commitlint/cli": "21.2.2",
+    "@commitlint/config-conventional": "21.2.2",
     "@commitlint/types": "21.2.0",
     "@fullstacksjs/eslint-config": "14.8.1",
     "@tailwindcss/typography": "0.5.20",
     "@tailwindcss/vite": "4.3.3",
-    "astro": "7.2.4",
-    "cspell": "10.0.1",
-    "eslint": "10.8.1",
+    "astro": "7.3.2",
+    "cspell": "10.3.1",
+    "eslint": "10.10.0",
     "eslint-plugin-astro": "3.1.0",
-    "lint-staged": "17.3.0",
+    "lint-staged": "17.5.1",
     "prettier": "3.9.6",
-    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-astro": "1.0.0",
     "satteri": "0.10.5",
-    "satteri-callouts": "1.0.0",
-    "simple-git-hooks": "2.13.1",
+    "satteri-callouts": "1.0.1",
+    "simple-git-hooks": "2.14.0",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
-    "zod": "4.4.3"
+    "zod": "4.6.4"
   }
 }
